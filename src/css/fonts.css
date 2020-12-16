@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Nexa;
+  src: local(Nexa Bold), url("/assets/fonts/Nexa Bold.woff") format("woff"), url("/assets/fonts/Nexa Bold.ttf") format("truetype"), url("/assets/fonts/Nexa Bold}") format("embedded-opentype"), url("/assets/fonts/Nexa Bold.svg  ") format("svg"), url("/assets/fonts/Nexa Bold.otf  "), url("/assets/fonts/Nexa Bold.eot  ");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}

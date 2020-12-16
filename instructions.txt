@@ -1,0 +1,114 @@
+Anton
+Balsamiq Sans
+Permanent Marker
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+  +pro
+  +Text-Style-
+  +font-family($family,$waight,$size,$line-height,$color)
+  calc(20px + (50-20)*((100vw-320px)/(1440-320))) 
+  +absolute( $width, $height, $top,  $left,  $right,$x,$y) 
+  @media (min-width: 0px) and (max-width: 1145px)
+  +media-breakpoint-only(sm)
+  +media-breakpoint-up(md)
+  +media-breakpoint-down(lg)
+  include  ./animals/connectForm
+  @extend %procents
+  +bg()
+  +flex
+  +fdc
+  +center
+  +jucc
+  +jucs
+  +juce
+  +jucb
+  +juca
+  +alis 
+  +alie
+  +alic
+  +alisc
+  +alistretch
+  +alib
+  
+   
+
+   input.form-check-input(type='checkbox')
+  darken()
+  lighten( #3E2723, 50%)
+  rgba(0, 0, 0, 0.95)
+
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12)
+    box-shadow: 0px 5px 14px 4px rgba(0, 0, 0, 0.5)
+   =========== адаптивное свойство
+    padding: 0 calc(minpx + (50-min)*((100vw-320px)/(1200-320))) 0
+    будет работать от 1200 до 320
+    container: max-width: 1200px
+    минимальное значение окна  --- 320
+      максимальное значение окна  --- 1200
+
+
+   ==========================
+      @media (min-width: 768px)
+      @media (min-width: ) and (max-width: )
+      @media (max-width: )
+
+   //-- дает прозрачность--->  rgba(0, 0, 0, 0.95)
+   //-- просто высветляет ---> lighten( , 50%)
+
+------------изображения так
+   img(src="assets/img/buscet/buscet-1.png",alt="") 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==SASS======SASS======SASS======SASS======SASS======
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+.hoverable {.special & {}}======= класс меняет свойтва в зависимости от родителя (не работает)
+
+%prominent
+@extend %prominent;  --добавляет свойства без доьавления класса prominent
+
+@extend .prominent; ---добавит все свойства класса .prominent  все-таки потянется в конечный файл css 
+color: lighten($color_success, 50%)
+
+.hoverable {  &.special  {}}  === .hoverable  .special
+
+$color_success: cyan
+color: lighten($color_success, 50%)
+
+@mixin box-shadow
+  box-shadow: 0px 5px 14px 4px rgba(0, 0, 0, 0.5)
+  
+@include box-shadow
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==FLEX========FLEX========FLEX========FLEX========FLEX========FLEX======
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+например три блока. их нужно сделать в пропорции 1/3/3. но их ширина в сумме не 100%
+тогда 
+
+flex: 0 0 10%
+flex: 0 0 30%
+flex: 0 0 30%
+
+это камни
+
+если внутри нет большого слова, которое распирает больше чем 10% они будут уменьшаться в этой пропорции до ширины максимального слова но так и не перейдут на новую строку.
+потом блок не уменьшается а переходит на другую строку. 
+если есть внутри большое слово и все это не работает. нао ставить тогда overflow: hidden
+или overflow: scroll. лучше сразу overflow: scroll
+
+стоит тоько сделать так, то блок полностью займет свободное пространство-- в данном случае 40%. он стал пружиной остальные блоки меньше 30% не станут
+flex: 1 0 10%
+flex: 0 0 30%
+flex: 0 0 30%
+ 
+это хорошо когда нужно сделать один блок из трех стретчевым.
+
