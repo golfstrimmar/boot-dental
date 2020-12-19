@@ -1,56 +1,32 @@
 //- подключаем везде
 include ../utils/mixins
 
-
-//- сделал оверлей поверх меню на <768. по оверлею-закрытие. он прозрачный. z-index: 1. чтобы ссылки были поверх него им индекс немного больше. вообще все кликабельное-- сквезь него индексами.
-
-
-
-
 header#header.header
   .header__wrapper
     .container
-      .header__body
-        .header__title 
-          h2 header (only in inglish)
-        .header__discription discription
-        .header__plaza.header-plaza
-          .header-plaza__body
-            .header-plaza__item просто текст lorem
-            .header-plaza__item просто текст lorem
-            .header-plaza__item просто текст lorem
+      .header__body.row
+        a(href="#!").header__logo
+          img(src="assets/img/logo.svg",alt="")
+        ul.header__menu.header-menu.row.no-gutters#header__menu
+          .header__menu_overlay
+            .ibg.bg
+              img(src="assets/img/dental-1.png",alt="")
+          i.header-close.fa.fa-times
+          li.header-menu__item
+            a.header-menu__link(href="#!") О клинике 
+          li.header-menu__item 
+            a.header-menu__link(href="#!") Услуги
+          li.header-menu__item 
+            a.header-menu__link(href="#!") Цены
+          li.header-menu__item 
+            a.header-menu__link(href="#!") Контакты
+        .header__service.header-service
+          .header-service__body.row.no-gutters
+            a(href="#!").header-service__phone.col-xl-5  +7(495) 726-55-80
+            .header-service__search.col-xl-7
+              input.search-input(type='text' placeholder="Поиск")
+              i.fa.fa-search
+        i.header-burger.fa.fa-bars
 
 
-
-
-
-
-
-
-
-
-
-//- #header.header
-//-   .header__body.container
-//-     .header__logo
-//-       img(src = "assets/img/logo.png", alt = "img") 
-//-     #header__menu.header__menu
-//-       .header__menu_overlay
-//-         .ibg.bg
-//-           img(src="assets/img/img-5.png",alt="")
-//-       ul.row.no-gutters
-//-         li
-//-           button.btn.btn-outline-primary.btn-outline-primary-header.header__link(type='button') The Story
-//-         li
-//-           button.btn.btn-outline-primary.btn-outline-primary-header.header__link(type='button') Product
-//-         li
-//-           button.btn.btn-outline-primary.btn-outline-primary-header.header__link(type='button') partners 
-//-         li
-//-           button.btn.btn-outline-primary.btn-outline-primary-header.header__link(type='button') Recipes
-//-         li
-//-           button.btn.btn-outline-primary.btn-outline-primary-header.header__link(type='button') Shop
-//-         li
-//-           button.btn.btn-outline-primary.btn-outline-primary-header.header__link(type='button') where to Find
-//-       span.icon-close2
-//-     span.header__burger.icon-menu
 

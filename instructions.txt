@@ -6,6 +6,7 @@ Permanent Marker
 
   +pro
   +Text-Style-
+   +font-family(Montserrat,500,15px,22px,#FFFFFF)
   +font-family($family,$waight,$size,$line-height,$color)
   calc(20px + (50-20)*((100vw-320px)/(1440-320))) 
   +absolute( $width, $height, $top,  $left,  $right,$x,$y) 

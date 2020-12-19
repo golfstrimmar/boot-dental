@@ -5,29 +5,33 @@ import $ from "jquery";
 
 let wrapper = document.querySelector(".wrapper");
 let headerOverlay = document.querySelector(".header__menu_overlay");
-let burger = document.querySelector(".header__burger");
+let burger = document.querySelector(".header-burger");
 let body = document.body;
+let header = document.querySelector(".header__body");
 let menu = document.querySelector("#header__menu");
-
+let service = document.querySelector(".header__service");
 wrapper.addEventListener("click", function (event) {
   
   
   if (event.target == burger) {
     menu.classList.add("header__menu_act");
+    menu.appendChild(service);
+    service.classList.add("header-service_act");
     body.style.overflow = "hidden";
   } else {
   if (
     headerOverlay !== event.target &&
     document.querySelector("input") !== event.target &&
-    document.querySelector("span") !== event.target &&
-    document.querySelector(".icon-Vector") !== event.target &&
+    document.querySelector("i") !== event.target &&
     document.querySelector(".bg") !== event.target
   ) {
     menu.classList.remove("header__menu_act");
+    service.classList.remove("header-service_act");
+    header.appendChild(service);
     body.style.overflow = "visible";
   }
   }
-  if (event.target == document.querySelector(".icon-close2")) {
+  if (event.target == document.querySelector(".header-close")) {
      menu.classList.remove("header__menu_act");
      body.style.overflow = "visible";
   }
@@ -36,13 +40,13 @@ wrapper.addEventListener("click", function (event) {
 
 
 window.addEventListener("resize", function (event) {
-  if (document.documentElement.clientWidth > 1200) {
-
+  if (document.documentElement.clientWidth > 992) {
     if (menu.classList.contains("header__menu_act")) {
-        menu.classList.remove("header__menu_act");
-        body.style.overflow = "visible";
-    }
-
+      menu.classList.remove("header__menu_act");
+      service.classList.remove("header-service_act");
+      header.appendChild(service);
+      body.style.overflow = "visible";
+      }
   } 
 });
 
@@ -53,10 +57,8 @@ window.addEventListener("resize", function (event) {
          ".header"
        ).classList.add("responciveHeader");
        
-      //  .style.cssText = `height: 100px;	background-color: rgba(0,0,0, 0.7);`;
      } else {
        document.querySelector(".header").classList.remove("responciveHeader");
-      //  .style.cssText = `height: 142px;background-color: rgba(0,0,0, 1);`;
      }
    });
 
