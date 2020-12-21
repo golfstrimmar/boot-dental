@@ -1,11 +1,13 @@
 
 import $ from "jquery";
+import Plyr from "plyr";
+
 
 
 $(document).ready(function () {
-
-  // $(".popup").fadeOut(1);
+const player = new Plyr("#player");
   $(".popup__init").on("click", function () {
+    
     $(".modal").fadeIn(200);
     player.play();
   });
@@ -17,5 +19,5 @@ $(document).ready(function () {
     $(".modal").fadeOut(200);
     player.stop();
   });
-});
+}); 
 

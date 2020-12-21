@@ -1,19 +1,24 @@
 import $ from "jquery";
 
 $(Document).ready(function () {
-  $(".slider-burger-js").slick({
-    // dots: true,
+  $(".slider-main-js").slick({
+    dots: true,
+    arrows: true,
     // slidesToShow: 4,
     // slideToscroll: 1,
     speed: 800,
     easing: "ease",
     cssEase: "linear",
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 1000,
-arrows: false,
-    // centerMode: true,
-    // centerPadding: "10px",
-    slidesToShow: 4,
+    centerMode: false,
+    // centerPadding: "0px",
+    slidesToShow: 1,
+    nextArrow: $(".slider-main-arrows__arrow_next"),
+    prevArrow: $(".slider-main-arrows__arrow_prev"),
+    customPaging: function (slider, i) {
+      return i + 1 + "/" + slider.slideCount;
+    },
     // responsive: [
     //   {
     //     breakpoint: 1400,

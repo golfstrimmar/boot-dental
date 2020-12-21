@@ -1,0 +1,36 @@
+//- form.connect__form.col-md-6.col-lg-3
+//-   .connect__form-item
+//-     input#name(type='text' required='' placeholder=' Denzel Washington')
+//-     label(for='name') What is your name?
+//-   .connect__form-item
+//-     input#email(type='email' required='' placeholder=' thebestmail@mail.com')
+//-     label(for='email') What is your email?
+//-   .connect__form-item
+//-     textarea#message(type='text' required='' placeholder=' Your awesome message' cols=' 40' rows='6')
+//-     label(for='message') Write your message
+//-   .connect__form-item.connect__file-add
+//-     input#customFile.custom-file-input(type='file')
+//-     label.name__text(for='customFile') Add "attachment
+//-     .custom-file
+//-   .form__submit-button
+//-     button#submit-button.btn-primary.btn-primary-all(type='submit') Send message
+
+
+section#contacts.contacts
+ .contacts__wrapper(style="position: relative")
+    .ibg.bg
+      img(src="assets/img/img-1.png",alt="img")
+    .container
+      .contacts__body.row.justify-content-center
+        form.connect__form.col-lg-8
+          h2 Запишитесь на консультацию и мы поможем вам
+          div
+            .connect__form-item
+              input#name(type='text' required='' placeholder=' Denzel Washington')
+              label(for='name') ИМЯ*
+            .connect__form-item
+              input#email(type='email' required='' placeholder=' thebestmail@mail.com')
+              label(for='email') Контактный телефон*
+            .connect__form-item Для расчета предварительной стоимости лечения вышлите выписки и снимки на почту Dentalbeauty@mail.ru
+          .form__submit-button
+            button.btn-primary.btn-primary-all(type='submit') Записаться на консультацию

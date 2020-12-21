@@ -1,5 +1,5 @@
 import $ from 'jquery';
-
+import Plyr from "plyr";
   
 // ==============================================
 
@@ -26,7 +26,7 @@ import "slick-carousel";
 import "./js/mySlick.js";
 import './css/slick.css';
 
-import "./js/plyr.js";
+// import "./js/plyr.js";
 import './css/style.css';// <--это icomoon
 import './css/plyr.css';
 

@@ -1,3 +1,6 @@
+document.designMode = 'on'
+
+
 Anton
 Balsamiq Sans
 Permanent Marker
@@ -6,9 +9,12 @@ Permanent Marker
 
   +pro
   +Text-Style-
-   +font-family(Montserrat,500,15px,22px,#FFFFFF)
-  +font-family($family,$waight,$size,$line-height,$color)
++font-family(Montserrat,500,15px,22px,#FFFFFF)
++font-family($family,$waight,$size,$line-height,$color)
++font-family(Montserrat,500,24px,29px,$f-color)
+
   calc(20px + (50-20)*((100vw-320px)/(1440-320))) 
+  +absolute( 40px, 20px, 50%,  60%,  null,0,0)
   +absolute( $width, $height, $top,  $left,  $right,$x,$y) 
   @media (min-width: 0px) and (max-width: 1145px)
   +media-breakpoint-only(sm)
@@ -16,7 +22,10 @@ Permanent Marker
   +media-breakpoint-down(lg)
   include  ./animals/connectForm
   @extend %procents
-  +bg()
+  +bg($back-fone)
+  +bg($active)
+  +bg($back-main)
+  +border(1px,darken($active, 50%))
   +flex
   +fdc
   +center
@@ -33,7 +42,7 @@ Permanent Marker
   +alib
   
    
-
+.relative
    input.form-check-input(type='checkbox')
   darken()
   lighten( #3E2723, 50%)
@@ -84,7 +93,10 @@ color: lighten($color_success, 50%)
   
 @include box-shadow
 
-
+<!-- в sass перебор в цикле -->
+@for $i from 1 through 12
+  .col-#{$i}
+    background-color: lighten(#0D47A1, $i * 8%)
 
 
 
