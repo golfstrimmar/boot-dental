@@ -13,63 +13,57 @@ include ../utils/mixins
 
 
 
-//- section#footer.footer
-//-  .footer__wrapper
-//-     .container
-//-       .footer__body.row
-//-         .col-lg-7.footer__item_left.footer-item
-//-           .footer-item__body
-//-             h2.footer-item__title Контакты 
-//-             .footer-item__content.footer-item-content
-//-               .footer-item-content__body.row.no-gutters
-//-                 .footer-item-content__left.col-6.flex-column.align-items-start
-//-                   .nav-item
-//-                     .nav-item__body.d-flex
-//-                       img(src="assets/img/Group9.svg",alt="img").nav-item__icon
-//-                       .nav-item__text.nav-item-text
-//-                         .nav-item-text__body.row.no-gutters.flex-column
-//-                           .nav-item__text +7 (985) 764-11-03
-//-                           .nav-item__text +7 (985) 764-11-03
-//-                   .nav-item
-//-                     .nav-item__body.d-flex
-//-                       img(src="assets/img/Group9.svg",alt="img").nav-item__icon
-//-                       .nav-item__text.nav-item-text
-//-                         .nav-item-text__body.row.no-gutters.flex-column
-//-                           .nav-item__text Dentalbeauty@mail.ru
-//-                   .nav-item
-//-                     .nav-item__body.d-flex
-//-                       img(src="assets/img/Group9.svg",alt="img").nav-item__icon
-//-                       .nav-item__text.nav-item-text
-//-                         .nav-item-text__body.row.no-gutters.flex-column
-//-                           .nav-item__text пн-пт: 09:00-21:00 
-//-                           .nav-item__text сб-вс: 10:00-19:00
-//-                   .nav-item
-//-                     .nav-item__body.d-flex
-//-                       img(src="assets/img/Group9.svg",alt="img").nav-item__icon
-//-                       .nav-item__text.nav-item-text
-//-                         .nav-item-text__body.row.no-gutters.flex-column
-//-                           .nav-item__text Москва, Ломоносовский
-//-                           .nav-item__text проспект, дом 29, корпус 2 ЖК
-//-                           .nav-item__text Шуваловский
-
-//-                 .footer-item-content__right.col-5
-//-                   .footer-item-content__icons.row.no-gutters
-//-                     a(href="#!")  
-//-                       img(src="assets/img/footer/img-1.svg",alt="img")
-//-                     a(href="#!")  
-//-                       img(src="assets/img/footer/facebook.svg",alt="img")
-//-                     a(href="#!")  
-//-                       img(src="assets/img/footer/whatsapp.svg",alt="img")
-//-                     a(href="#!")  
-//-                       img(src="assets/img/footer/youtube.svg",alt="img")
-//-             .footer-item__description 2020. Клиника «Dental@Beauty» Все права защищены. © ООО «‎ДенталБьюти»  Цены, указанные на сайте, не являются публичной офертой. Уточняйте стоимость в клинике. Есть противопоказания. Необходима консультация специалиста
-        
-//-         .footer__item.footer-item.footer__item_map.container-fluid
-//-           .footer-map
-//-             .ibg.bg
-//-               img(src="assets/img/footer/map.png",alt="map")
-
-footer#footer.footer
+section#footer.footer
  .footer__wrapper
-    .container-fluid(style="padding: 0 0 0 0%")  fluid
-      .container text
+    .container
+      .footer__body.row
+        .col-lg-7.footer__item_left.footer-item
+          .footer-item__body
+            h2.footer-item__title Контакты 
+            .footer-item__content.footer-item-content
+              .footer-item-content__body.row.no-gutters
+                .footer-item-content__left.col-md-6.flex-column.align-items-start
+                  .nav-item
+                    .nav-item__body.d-flex
+                      img(src="assets/img/Group9.svg",alt="img").nav-item__icon
+                      .nav-item__text.nav-item-text
+                        .nav-item-text__body.row.no-gutters.flex-column
+                          .nav-item__text +7 (985) 764-11-03
+                          .nav-item__text +7 (985) 764-11-03
+                  .nav-item
+                    .nav-item__body.d-flex
+                      img(src="assets/img/footer/img-1.svg",alt="img").nav-item__icon
+                      .nav-item__text.nav-item-text
+                        .nav-item-text__body.row.no-gutters.flex-column
+                          .nav-item__text Dentalbeauty@mail.ru
+                  .nav-item
+                    .nav-item__body.d-flex
+                      img(src="assets/img/footer/img-2.svg",alt="img").nav-item__icon
+                      .nav-item__text.nav-item-text
+                        .nav-item-text__body.row.no-gutters.flex-column
+                          .nav-item__text пн-пт: 09:00-21:00 
+                          .nav-item__text сб-вс: 10:00-19:00
+                  .nav-item
+                    .nav-item__body.d-flex
+                      img(src="assets/img/footer/clock.svg",alt="img").nav-item__icon
+                      .nav-item__text.nav-item-text
+                        .nav-item-text__body.row.no-gutters.flex-column
+                          .nav-item__text Москва, Ломоносовский
+                          .nav-item__text проспект, дом 29, корпус 2 ЖК
+                          .nav-item__text Шуваловский
+
+                .footer-item-content__right.col-12.col-md-4
+                  .footer-item-content__icons.row.no-gutters.justify-content-md-between.justify-content-around 
+                    a(href="#!")  
+                      img(src="assets/img/footer/img-1.svg",alt="img")
+                    a(href="#!")  
+                      img(src="assets/img/footer/facebook.svg",alt="img")
+                    a(href="#!")  
+                      img(src="assets/img/footer/whatsapp.svg",alt="img")
+                    a(href="#!")  
+                      img(src="assets/img/footer/youtube.svg",alt="img")
+            .footer-item__description 2020. Клиника «Dental@Beauty» Все права защищены. © ООО «‎ДенталБьюти»  Цены, указанные на сайте, не являются публичной офертой. Уточняйте стоимость в клинике. Есть противопоказания. Необходима консультация специалиста
+        .col-lg-3.footer-map
+          .footer-map__img
+            .ibg.bg
+              img(src="assets/img/footer/map.png",alt="")

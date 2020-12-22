@@ -1,65 +1,92 @@
 .footer
 
-.footer__wrapper
-  +bg($back-main)
-.container
-
-.footer__body
-
-.row
-
-.col-lg-6
-
-.footer__item
-  &_left
-    .footer-item__body
-      
-  &_map
-    position: relative
+  .footer__wrapper
+    +bg($back-main)
+    overflow: hidden
+    margin: 5% 0 5% 0	
+    .container
+   
+  .footer__body
     
-.footer-map
-  padding: 0 0 20% 0
+  .row
+  
+  .col-lg-6
+  
+  .footer__item
+    &_left
+      .footer-item__body
+        
+    &_map
+      position: relative
+      
+  .footer-map
+    padding: 0 0 20% 0
+  
+  .footer-item__body
+    padding: 8% 0 5% 0
+    +media-breakpoint-only(xs)
+      padding: 8% 5% 5%
+  .footer-item__title
+  
+  .footer-item__content
+  
+  .footer-item-content
+  
+  .footer-item-content__body
+  
+  .no-gutters
+  
+  .footer-item-content__left
+  
+  .col-6
+  
+  .flex-column
+  
+  .align-items-start
+  
+  .nav-item
+    padding: 0!important
+    margin: 0 0 30px 0!important
+    &:last-child
+      margin: 0 0 0 0!important
+  .nav-item__body
+  .d-flex
+  
+  .nav-item__icon
+    width: 40px
+    height: 40px
+    margin: 0 15px 0 0
+    padding: 0 0 0 0!important	
+    
+  
+  .nav-item__text
+  
+  .nav-item-text
+  
+  .nav-item-text__body
+  
+  .footer-item-content__right
+    +media-breakpoint-down(sm)
+      margin: 5% 0 0 0
+  .footer-item-content__icons
+  
+  .footer-item__description
+    +font-family(Montserrat,500,14px,17px,$f-color)
+    padding: 10% 5% 0 0	
+    
+  .ibg
+  
+  .footer-map
+    position: relative
+    padding: 0 0 50% 0	
+    &__img
+      +absolute( 300%, 100%, 0,  0,  null,0,0)
+      +media-breakpoint-down(md)
+        +pro
 
-.footer-item__body
+    
 
-.footer-item__title
 
-.footer-item__content
-
-.footer-item-content
-
-.footer-item-content__body
-
-.no-gutters
-
-.footer-item-content__left
-
-.col-6
-
-.flex-column
-
-.align-items-start
-
-.nav-item
-
-.nav-item__body
-
-.d-flex
-
-.nav-item__icon
-
-.nav-item__text
-
-.nav-item-text
-
-.nav-item-text__body
-
-.footer-item-content__right
-
-.footer-item-content__icons
-
-.footer-item__description
-
-.ibg
-
-.bg
+  .nav-item .nav-item__body
+    justify-content: start!important
+  
