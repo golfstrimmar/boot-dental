@@ -2,7 +2,7 @@
   outline: 1px solid red
 
 [class*="col-"]
-  padding: 0 0 0 0	
+  padding: 0 0 0 0
 
 
 .font-main
@@ -31,7 +31,6 @@ body
   top: 0
   left: 0
   @include fdc
-  padding: 140px 0 0
 .container
   outline: 1px solid #4164ff
   // background: #BBDEFB
@@ -48,7 +47,8 @@ body
     // width: 80%
     // width: 100%
     // padding: 0 15px 	
-
+  +media-breakpoint-up(xl)
+    max-width: 1170px
  
 
 .ibg
@@ -157,3 +157,27 @@ input
 .plyr
   +absolute( 100%, 100%, 0,  0,  null,0,0)
 
+
+
+
+
+// стили для общих блоков
+
+
+.btn-primary-all_dark
+  background: $f-color
+  border-radius: 40px
+  +font-family(Montserrat,500,18px,22px,$f-color)
+  color: white!important
+  text-transform: uppercase 
+  white-space: nowrap
+  box-sizing: border-box
+  padding: 18px 20px	
+
+.common-Title
+  font-size: 36px
+  font-weight: normal
+  line-height: 43px
+  text-transform: uppercase
+  +media-breakpoint-only(xs)
+    font-size: calc(20px + (36-20)*((100vw-320px)/(576-320))) 

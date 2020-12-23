@@ -1,43 +1,35 @@
 .work
-.work__wrapper
-  position: relative
-  padding: 5% 0 0 0	
-.container
-h2
-  +font-family(Montserrat,600,48px,58px,#032E4A)
-  padding: 0 0 2% 0
-  +media-breakpoint-down(sm)
-    padding: 0 3% 2% 3%
-.work__body
-  +jucb
-  +media-breakpoint-down(sm)
-    +jucc		
-.row
+  .work__wrapper
+    position: relative
+    padding: 5% 0
 
-.col-md-6
-
-.col-lg-3
-
-.work__item
-.work-item
-  flex: 0 1 23%
-  +media-breakpoint-down(lg)
-    flex: 0 1 40%
-    margin: 0 0 20px 0
+  h2
+    +media-breakpoint-down(sm)
+      padding: 0 3% 2% 3%
+  .work__body
+    +jucb
+    +media-breakpoint-down(sm)
+      +jucc		
+  .work__item
+  .work-item
+    flex: 0 1 23%
+    +media-breakpoint-down(lg)
+      flex: 0 1 40%
+      margin: 0 0 20px 0
 
 
-.work-item__body
-  background: rgba(227,247,248, .7)
-  box-shadow: 0px 0px 15px rgba(28, 41, 83, 0.15)
-  border-radius: 40px
-  min-height: 400px
-  min-width: 270px
-  padding: 45px 30px 30px
-.work-item__img
-  
-.work-item__title
-  +font-family(Montserrat,500,24px,29px,$f-color)
-  text-transform: uppercase
-  padding: 28px 0 18px 0	
-.work-item__description
-  +font-family(Montserrat,500,14px,19px,$f-color)
+  .work-item__body
+    background: rgba(227,247,248, .7)
+    box-shadow: 0px 0px 15px rgba(28, 41, 83, 0.15)
+    border-radius: 40px
+    min-height: 400px
+    min-width: 270px
+    padding: 45px 30px 30px
+  .work-item__img
+
+  .work-item__title
+    +font-family(Montserrat,500,24px,29px,$f-color)
+    text-transform: uppercase
+    padding: 28px 0 18px 0	
+  .work-item__description
+    +font-family(Montserrat,500,14px,19px,$f-color)

@@ -6,8 +6,8 @@ import Plyr from "plyr";
 
 $(document).ready(function () {
 const player = new Plyr("#player");
+
   $(".popup__init").on("click", function () {
-    
     $(".modal").fadeIn(200);
     player.play();
   });

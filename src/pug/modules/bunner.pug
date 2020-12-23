@@ -1,8 +1,8 @@
 //- подключаем везде
 include ../utils/mixins
 
-section#bunner.bunner
-  .bunner__wrapper
+section#bunner.bunner.container-fluid
+  .bunner__wrapper.row
     .ibg.bg
       img(src="assets/img/dental-1.png",alt="")
     .container
@@ -20,27 +20,7 @@ section#bunner.bunner
             .bunner-info__text  Отбеливание зубов Phillips Zoom White Speed( Zoom4) -20000 вместо 27000
             a(href="#!").bunner-info__link  Подробнее
               i &#8594;
-
-section#nav.nav
-  .nav__wrapper
-    .container
-      .nav__body.row.align-items-center
-        .col-xl-3.col-md-6.col-lg-6.nav__item.nav-item
-          .nav-item__body 
-            button.btn.btn-primary.btn-primary-all.proba-item__button(type="button") расчитать стоимость
-        .col-xl-3.col-md-6.col-lg-6.nav__item.nav-item
-          .nav-item__body
-            button.btn.btn-primary.btn-primary-all.proba-item__button.proba-item__button_big(type="button") получить консультацию
-        .col-xl-3.col-md-6.col-lg-6.nav__item.nav-item
-          .nav-item__body.d-flex.align-items-center
-            .nav-item__icon
-              img(src="assets/img/Group9.svg",alt="img")
-            .nav-item__text +7(495) 726-55-80
-        .col-xl-3.col-md-6.col-lg-6.nav__item.nav-item
-          .nav-item__body.d-flex.align-items-center
-            .nav-item__icon
-              img(src="assets/img/Vector.svg",alt="img")
-            .nav-item__text Москва, Ломоносовский проспект, 29 к 2
+      
 
 
 

@@ -8,6 +8,7 @@
   top: 0
   left: 0
   +bg($back-fone)
+ 
   &.responciveHeader
     background-color: rgba(245,245,245, 0.8)
     .header-menu__link
@@ -16,164 +17,170 @@
       width: 50px
       height: 50px
 
-.header__wrapper
-  +pro
-  .container
-    @include media-breakpoint-only(xl) 
-      max-width: 1170px!important
-  // +bg($back-fone)
+  .header__wrapper
+    +pro
+    .container
+      @include media-breakpoint-only(xl) 
+        max-width: 1170px!important
+    // +bg($back-fone)
 
-.header__body
-  +alic
-.header__logo
-  flex: 0 1 12%
-  img
-    width: 70px
-    height: 70px
-    @include media-breakpoint-down(sm)
-      width: 50px
-      height: 50px
-.header__menu
-  flex: 0 1 34%
-  margin: 0 32px 0 auto
-  padding: 0 0 0 0	
-  +media-breakpoint-only(lg)
-    flex: 0 1 40%
+  .header__body
+    +alic
+    // +media-breakpoint-only(lg)
+      // padding: 0 0 1% 0	
 
-// ----------------------------------
-.header__service
-  flex: 0 1 36.5%
-  +media-breakpoint-down(lg)
-  +fdc
-.header-service__body
-  +jucb
-  +alic
-  +media-breakpoint-down(lg)
-    +juce
-.header-service__phone
-  flex: 0 1 35%
-  +font-family(Montserrat,600,18px,22px,#032E4A)
-  +media-breakpoint-down(lg)
-    flex: 0 1 100%
-    text-align: right
-    margin: 0 0 5px 0
-.header-service__search
-  flex: 0 1 58%
-  position: relative
-  padding: 17px 0
-  +media-breakpoint-down(lg)
-    flex: 0 1 100%	
-  .search-input
-    +ts-2
-    +absolute( 95%, 100%, 0,null , 0  ,0,0)
-    +media-breakpoint-down(lg)
-      width: 100%
-    background: #FFFFFF
-    border-radius: 38px
-    z-index: 2
-
-
-  i.fa.fa-search
-    font-size: 20px
-    background: #FFFFFF
-    +absolute( 20px, 20px, 50%, null  ,  10px,0,-50%) 
-    z-index: 3
-// ------------------------------------------
-.header-menu
-  +jucb
-  +pro
-.header__menu_overlay
-  display: inline-flex
-  +media-breakpoint-up(lg)
-    display: none
-.header-menu__item
-  display: flex
-.header-menu__link
-  +ts-1
-  +pro
-  padding: 33px 5px   // <--- задает высоту  header 
-  +border(1px , transparent)
-  &:hover
-    +bg($back-main)
-    +border(1px , darken($back-main,50%))
-    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12)
-
-  &:active
-    +bg(darken($back-main,50%))
-    +border(1px , darken($back-main,80%))
-    color: lighten($back-main,80%)
-    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.4)  
-  
-// ------------------------------
-.header-close,.header-burger
-  display: none
-// ---------------------------------------------------------------
-+media-breakpoint-down(md)
-  
-  .header-burger
-    margin: 0 0 0 auto
-    font-size: 20px
-    display: inline-block
-  .header-close
   .header__logo
-    flex: 0 1 20% 
-  .header-menu
-    width: 100vw
-    min-height: 100vh
-    position: fixed
-    top: 0
-    left: -100vw
-    padding: 117px 40px 0 40px
-    overflow: auto
-    text-align: right
-    +fdc
-    +jucs
-    +alie
-    +bg(black)
-    
-  .header__menu_overlay
-    position: relative
-    +absolute( 100%, 100%, 0, 0, null,0,0) 
-    opacity: .5
-    z-index: 2
-    z-index: 20
-    .bg
-      height: 50%
-      top: 50%
-      opacity: .2
-  .header-menu__item
-  .header-menu__link
-    padding: 10px 
-    color: white
-    position: relative
-    z-index: 22
-    display: inline-flex
-    z-index: 20
-  .header-service
-    display: none
-    z-index: 20
-    flex: 0 1 auto
-    width: 200px
-    &_act
-      display: inline-flex
-      margin: 40px 0 0 0
-    .header-service__phone
-      color: white
-      margin: 0 0 20px 0
+    flex: 0 1 24%
+    +media-breakpoint-only(lg)
+      flex: 0 1 8%
+    img
+      width: 70px
+      height: 70px
+      @include media-breakpoint-down(sm)
+        width: 50px
+        height: 50px
+  .header__menu
+    flex: 1 1 34%
+    margin: 0 32px 0 auto
+    padding: 0 0 0 0
+    flex-wrap: nowrap!important 
+    +media-breakpoint-only(lg)
+      flex: 0 1 40%
 
-  .header__menu_act
-    left: -30px
-    & + .header__menu_overlay
-      left: -30px
-  .header-close
+  // ----------------------------------
+  .header__service
+    flex: 0 1 36.5%
+    +media-breakpoint-down(lg)
+    +fdc
+  .header-service__body
+    +jucb
+    +alic
+    +media-breakpoint-down(lg)
+      +juce
+  .header-service__phone
+    
+    +font-family(Montserrat,600,18px,22px,#032E4A)
+    +media-breakpoint-down(lg)
+      
+      text-align: right
+      margin: 0 0 5px 0
+  .header-service__search
+    
+    position: relative
+    padding: 17px 0
+   	
+    .search-input
+      +ts-2
+      +absolute( 95%, 100%, 0,null , 0  ,0,0)
+      +media-breakpoint-down(lg)
+        width: 100%
+      background: #FFFFFF
+      border-radius: 38px
+      z-index: 2
+
+
+    i.fa.fa-search
+      font-size: 20px
+      background: #FFFFFF
+      +absolute( 20px, 20px, 50%, null  ,  10px,0,-50%) 
+      z-index: 3
+  // ------------------------------------------
+  .header-menu
+    +jucb
+    +pro
+  .header__menu_overlay
+    display: inline-flex
+    +media-breakpoint-up(lg)
+      display: none
+  .header-menu__item
     display: flex
-    z-index: 1000
-    font-size: 20px
-    @include absolute(20px,20px,30px,null,40px,0%,0%)
-    color: white
+  .header-menu__link
+    +ts-1
+    +pro
+    padding: 33px 5px   // <--- задает высоту  header 
+    +border(1px , transparent)
+    &:hover
+      +bg($back-main)
+      +border(1px , darken($back-main,50%))
+      box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12)
+
+    &:active
+      +bg(darken($back-main,50%))
+      +border(1px , darken($back-main,80%))
+      color: lighten($back-main,80%)
+      box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.4)  
+
+  // ------------------------------
+  .header-close,.header-burger
+    display: none
+  // ---------------------------------------------------------------
+  +media-breakpoint-down(md)
+
+    .header-burger
+      margin: 0 0 0 auto
+      font-size: 20px
+      display: inline-block
+    .header-close
+    .header__logo
+      flex: 0 1 20% 
+    .header-menu
+      width: 100vw
+      min-height: 100vh
+      position: fixed
+      top: 0
+      left: -100vw
+      padding: 117px 40px 0 40px
+      overflow: auto
+      text-align: right
+      +fdc
+      +jucs
+      +alie
+      +bg(black)
+
+    .header__menu_overlay
+      position: relative
+      +absolute( 100%, 100%, 0, 0, null,0,0) 
+      opacity: .5
+      z-index: 2
+      z-index: 20
+      .bg
+        height: 50%
+        top: 50%
+        opacity: .2
+    .header-menu__item
+    .header-menu__link
+      padding: 10px 
+      color: white
+      position: relative
+      z-index: 22
+      display: inline-flex
+      z-index: 20
+    .header-service
+      display: none
+      z-index: 20
+      flex: 0 1 auto
+      width: 200px
+      &_act
+        display: inline-flex
+        margin: 40px 0 0 0
+      .header-service__phone
+        color: white
+        margin: 0 0 20px 0
+
+    .header__menu_act
+      left: -30px
+      & + .header__menu_overlay
+        left: -30px
+    .header-close
+      display: flex
+      z-index: 1000
+      font-size: 20px
+      @include absolute(20px,20px,30px,null,40px,0%,0%)
+      color: white
+      
+// ----------------------------------------------------------------
 +media-breakpoint-only(xs)
   .header__body
     padding: 0 15px	
   .header-menu
     padding: 117px 20px
-

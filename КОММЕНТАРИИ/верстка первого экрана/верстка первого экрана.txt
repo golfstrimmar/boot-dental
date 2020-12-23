@@ -1,0 +1,28 @@
+1. верстать header полностью.
+2. верстать nav полностью. nav пойдет в самый низ.
+3. сделать секцию top . она делается колоной на весь экран
+  .top
+    .top__wrapper
+      min-height: 100vh
+      +fdc
+4. в ней два блока. вверху bunner внизу nav 
+   nav кладется камнем а bunner-- пружиной
+      
+      div.item.container-fluid
+
+sass-- 
+  .item
+    flex-grow: 1   <----  !!!!!
+    position: relative
+  
+5. cверху делаем отступ на высоту header 
+
+6.  div.item.container-fluid
+      .ibg.bg
+        img(src="assets/img/dental-1.png",alt="")
+      .ban__wrapper.row
+        .container.bunner
+          .bunner__body.row
+            --содержимое баннера--
+
+в итоге top всегда будет занимать высоту первого экрана и содержать в себе баннер с фоном и навигацию внизу.
