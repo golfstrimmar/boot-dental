@@ -1,23 +1,27 @@
-
 import $ from "jquery";
 import Plyr from "plyr";
 
-
-
 $(document).ready(function () {
-const player = new Plyr("#player");
+  const player = new Plyr("#player");
 
-  $(".popup__init").on("click", function () {
-    $(".modal").fadeIn(200);
-    player.play();
+// плеер только у окна с классом .first-popup поэтому делать проверку и включать если есть такой класс
+
+  $(".popup-init-js").on("click", function () {
+    let pop = $("div." + $(this).attr("rel"))
+    pop.fadeIn();
+    if(pop.hasClass("first-popup")){
+      player.play();
+    }
   });
-  $(".icon-close2").on("click", function () {
-    $(".modal").fadeOut(200);
+
+  $(".close-js").on("click", function () {
+    $(".popup").fadeOut(200);
     player.stop();
   });
+
   $(".popup__overlay").on("click", function () {
-    $(".modal").fadeOut(200);
+    $(".popup").fadeOut(200);
     player.stop();
   });
-}); 
 
+});

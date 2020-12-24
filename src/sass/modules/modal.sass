@@ -1,14 +1,12 @@
 .popup
-
-  &
-    position: fixed
-    width: 100vw
-    height: 100vh
-    top: 0
-    left: 0
-    @include bg(rgba(0, 0, 0, 0.95))
-    z-index: 1000
-
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  @include bg(rgba(0, 0, 0, 0.95))
+  display: none
+  z-index: 1000
   &__overlay
     @include absolute(100%,100%,0,0,null,0%,0%)
   &__inner
@@ -19,6 +17,10 @@
     position: relative
     @include absolute(70%,70%,50%,50%,null,-50%,-50%)
     @include bg(  #ff9419)
+    +media-breakpoint-only(xs)
+      width: 100%
+      height: 100%
+      
     .icon-close2
       display: block
       color: black

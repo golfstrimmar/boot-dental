@@ -1,6 +1,82 @@
 //- подключаем везде
 include ../utils/mixins
 
+section#footer.footer
+ .footer__wrapper
+    .container
+      .footer__body.row
+        .col-xs-12.order-2.order-xl-1.col-xl-8.footer__item_left.footer-item
+          .footer-item__body
+            h2.common-Title Контакты 
+            .footer-item__content.footer-item-content
+              .footer-item-content__body.row.no-gutters
+                ul.footer-item-content__left.col-md-6.flex-column.align-items-start
+                  - 
+                    items = [
+                      { 
+                        src: "assets/img/Group9.svg ",
+                         text1: "+7 (985) 764-11-03",
+                         text2: "+7 (985) 764-11-03 ",
+                         text3: ""
+                      },
+                      { 
+                        src: "assets/img/footer/img-1.svg", 
+                        text1: "Dentalbeauty@mail.ru",
+                        text2: "",
+                        text3: ""
+                        },
+                      { 
+                        src: "assets/img/footer/img-2.svg", 
+                        text1: "пн-пт: 09:00-21:00",
+                        text2: "сб-вс: 10:00-19:00 ",
+                        text3: "",
+                        },
+                      { 
+                        src: "assets/img/footer/clock.svg", 
+                        text1: "Москва, Ломоносовский",
+                        text2: "проспект, дом 29, ",
+                        text3: "корпус 2 ЖК ",
+                        },
+                    ]
+                  
+                  each index in items
+                    li.nav-item
+                      .nav-item__body.d-flex
+                        img(src=index.src,alt="img").nav-item__icon
+                        .nav-item__text.nav-item-text
+                          .nav-item-text__body.row.no-gutters.flex-column
+                            .nav-item__text=index.text1
+                            .nav-item__text=index.text2
+                            .nav-item__text=index.text3
+
+                
+                .footer-item-content__right.col-12.col-md-4
+                  ul.footer-item-content__icons.row.no-gutters.justify-content-md-between.justify-content-around 
+                    - 
+
+                      items = [
+                        { src: " assets/img/footer/img-1.svg" },
+                        { src: " assets/img/footer/facebook.svg" },
+                        { src: " assets/img/footer/whatsapp.svg" },
+                        { src: "assets/img/footer/youtube.svg " },
+                      ]
+
+                    each item in items
+                      li
+                        a(href="#!")  
+                          img(src=item.src,alt="img")
+
+
+
+            .footer-item__description 2020. Клиника «Dental@Beauty» Все права защищены. © ООО «‎ДенталБьюти»  Цены, указанные на сайте, не являются публичной офертой. Уточняйте стоимость в клинике. Есть противопоказания. Необходима консультация специалиста
+        .col-xs-12.order-1.order-xl-2.col-xl-3.footer-map
+          .footer-map__img
+            .ibg.bg
+              img(src="assets/img/footer/map.png",alt="")
+
+
+//- -------------------------------------------------------------------------------------------------------------
+
 .up_down_btn(title='Наверх') ↑
 
 
@@ -9,61 +85,3 @@ include ../utils/mixins
     .cssload-inner.cssload-one
     .cssload-inner.cssload-two
     .cssload-inner.cssload-three
-
-
-
-
-section#footer.footer
- .footer__wrapper
-    .container
-      .footer__body.row
-        .col-xl-8.footer__item_left.footer-item
-          .footer-item__body
-            h2.common-Title Контакты 
-            .footer-item__content.footer-item-content
-              .footer-item-content__body.row.no-gutters
-                .footer-item-content__left.col-md-6.flex-column.align-items-start
-                  .nav-item
-                    .nav-item__body.d-flex
-                      img(src="assets/img/Group9.svg",alt="img").nav-item__icon
-                      .nav-item__text.nav-item-text
-                        .nav-item-text__body.row.no-gutters.flex-column
-                          .nav-item__text +7 (985) 764-11-03
-                          .nav-item__text +7 (985) 764-11-03
-                  .nav-item
-                    .nav-item__body.d-flex
-                      img(src="assets/img/footer/img-1.svg",alt="img").nav-item__icon
-                      .nav-item__text.nav-item-text
-                        .nav-item-text__body.row.no-gutters.flex-column
-                          .nav-item__text Dentalbeauty@mail.ru
-                  .nav-item
-                    .nav-item__body.d-flex
-                      img(src="assets/img/footer/img-2.svg",alt="img").nav-item__icon
-                      .nav-item__text.nav-item-text
-                        .nav-item-text__body.row.no-gutters.flex-column
-                          .nav-item__text пн-пт: 09:00-21:00 
-                          .nav-item__text сб-вс: 10:00-19:00
-                  .nav-item
-                    .nav-item__body.d-flex
-                      img(src="assets/img/footer/clock.svg",alt="img").nav-item__icon
-                      .nav-item__text.nav-item-text
-                        .nav-item-text__body.row.no-gutters.flex-column
-                          .nav-item__text Москва, Ломоносовский
-                          .nav-item__text проспект, дом 29, корпус 2 ЖК
-                          .nav-item__text Шуваловский
-
-                .footer-item-content__right.col-12.col-md-4
-                  .footer-item-content__icons.row.no-gutters.justify-content-md-between.justify-content-around 
-                    a(href="#!")  
-                      img(src="assets/img/footer/img-1.svg",alt="img")
-                    a(href="#!")  
-                      img(src="assets/img/footer/facebook.svg",alt="img")
-                    a(href="#!")  
-                      img(src="assets/img/footer/whatsapp.svg",alt="img")
-                    a(href="#!")  
-                      img(src="assets/img/footer/youtube.svg",alt="img")
-            .footer-item__description 2020. Клиника «Dental@Beauty» Все права защищены. © ООО «‎ДенталБьюти»  Цены, указанные на сайте, не являются публичной офертой. Уточняйте стоимость в клинике. Есть противопоказания. Необходима консультация специалиста
-        .col-xl-3.footer-map
-          .footer-map__img
-            .ibg.bg
-              img(src="assets/img/footer/map.png",alt="")

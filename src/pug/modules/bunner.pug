@@ -1,25 +1,21 @@
 //- подключаем везде
 include ../utils/mixins
 
-section#bunner.bunner.container-fluid
-  .bunner__wrapper.row
-    .ibg.bg
-      img(src="assets/img/dental-1.png",alt="")
-    .container
-      .bunner__body.row
-        .bunner__buttons.row.no-gutters
-          button.btn.btn-primary.btn-primary-all(type='button') Стоматология 
-          button.btn.btn-primary.btn-primary-all(type='button') Косметология
-        .bunner__discription.col-md-6.col-lg-4 
-          span “Идеальное лицо — это совместное достижение стоматолога и косметолога. Если вы видите недостатки в своих чертах лица, а процедуры не дают желаемого результата, вам необходим комплексный подход для решения проблемы.”
-          p “Идеальное лицо — это совместное достижение стоматолога и косметолога."
-        h1.bunner__title акции 
-        .bunner__info.bunner-info.col-md-6.col-lg-4
-          .bunner-info__body
-            .bunner-info__title Отбеливание зубов
-            .bunner-info__text  Отбеливание зубов Phillips Zoom White Speed( Zoom4) -20000 вместо 27000
-            a(href="#!").bunner-info__link  Подробнее
-              i &#8594;
+.container.bunner
+  .bunner__body.row
+    .bunner__buttons.row.no-gutters
+      button.btn.btn-primary.btn-primary-all(type='button') Стоматология 
+      button.btn.btn-primary.btn-primary-all(type='button') Косметология
+    .bunner__discription.col-md-9.col-lg-8.col-xl-5
+      span “Идеальное лицо — это совместное достижение стоматолога и косметолога. Если вы видите недостатки в своих чертах лица, а процедуры не дают желаемого результата, вам необходим комплексный подход для решения проблемы.”
+      p “Идеальное лицо — это совместное достижение стоматолога и косметолога." 
+    h1.bunner__title акции 
+    .bunner__info.bunner-info.col-md-6.col-lg-4
+      .bunner-info__body
+        .bunner-info__title Отбеливание зубов
+        .bunner-info__text  Отбеливание зубов Phillips Zoom White Speed( Zoom4) -20000 вместо 27000
+        a(href="#!").bunner-info__link  Подробнее
+          i &#8594;      
       
 
 

@@ -1,4 +1,4 @@
-section#slider-main.slider-main
+section#slider.slider-main
  .slider-main__wrapper
     .container-fluid
       .slider-main__body
@@ -7,49 +7,31 @@ section#slider-main.slider-main
             img(src="assets/img/arrow-left.svg",alt="img")
           .slider-main-arrows__arrow_next.slider-main-arrows__arrow 
             img(src="assets/img/arrow-right.svg",alt="img")
+          
         .slider-main-js
-          .slider-main__item.slider-main-item
-            .slider-main-item__body.row
-              .col-12.col-lg-6.relative.slider-main-item__left
-                .ibg.bg
-                  img(src="assets/img/img-1.png",alt="")
-              .col-12.col-lg-6
-                .slider-main-item__content.slider-main-item-content
-                  .slider-main-item-content__body.row.no-gutters.flex-column
-                    .col-2.col-md-4.slider-main-item-content__icon.offset-7 
-                      img(src="assets/img/img-2.svg",alt="img")
-                    .col-6.slider-main-item-content__title.common-Title Имплантация шаблонами
-                    .col-6.slider-main-item-content__text  Максимально точная и атравматичная установка имплантов
-                    .col-4.slider-main-item-content__button
-                      button.btn.btn-primary.btn-primary-all(type="button") Подробнее
-          .slider-main__item.slider-main-item
-            .slider-main-item__body.row
-              .col-12.col-lg-6.relative.slider-main-item__left
-                .ibg.bg
-                  img(src="assets/img/img-1.png",alt="")
-              .col-12.col-lg-6
-                .slider-main-item__content.slider-main-item-content
-                  .slider-main-item-content__body.row.no-gutters.flex-column
-                    .col-2.col-md-4.slider-main-item-content__icon.offset-7 
-                      img(src="assets/img/img-2.svg",alt="img")
-                    .col-6.slider-main-item-content__title.common-Title Имплантация шаблонами
-                    .col-6.slider-main-item-content__text  Максимально точная и атравматичная установка имплантов
-                    .col-4.slider-main-item-content__button
-                      button.btn.btn-primary.btn-primary-all(type="button") Подробнее
-          .slider-main__item.slider-main-item
-            .slider-main-item__body.row
-              .col-12.col-lg-6.relative.slider-main-item__left
-                .ibg.bg
-                  img(src="assets/img/img-1.png",alt="")
-              .col-12.col-lg-6
-                .slider-main-item__content.slider-main-item-content
-                  .slider-main-item-content__body.row.no-gutters.flex-column
-                    .col-2.col-md-4.slider-main-item-content__icon.offset-7 
-                      img(src="assets/img/img-2.svg",alt="img")
-                    .col-6.slider-main-item-content__title.common-Title Имплантация шаблонами
-                    .col-6.slider-main-item-content__text  Максимально точная и атравматичная установка имплантов
-                    .col-4.slider-main-item-content__button
-                      button.btn.btn-primary.btn-primary-all(type="button") Подробнее
-     
-     
-       
+          - 
+            slides = [
+                { title: "первый слайд", rel: "slide-1-popup", headerButton: "modal-1"},
+                { title: "второй слайд", rel: "slide-2-popup", headerButton: "modal-2"},
+                { title: "третий слайд", rel: "slide-3-popup", headerButton: "modal-3"},
+                { title: "четвертый слайд", rel: "slide-4-popup", headerButton: "modal-4"},
+                { title: "пятый слайд", rel: "slide-5-popup", headerButton: "modal-5"},
+            ]
+          
+          each slide in slides
+            .slider-main__item.slider-main-item
+              .slider-main-item__body.row
+                .col-12.col-lg-6.relative.slider-main-item__left
+                  .ibg.bg
+                    img(src="assets/img/img-1.png",alt="")
+                .col-12.col-lg-6
+                  .slider-main-item__content.slider-main-item-content
+                    .slider-main-item-content__body.row.no-gutters.flex-column
+                      .col-2.col-md-4.slider-main-item-content__icon.offset-7 
+                        img(src="assets/img/img-2.svg",alt="img")
+                      .col-6.slider-main-item-content__title.common-Title=slide.title
+                      .col-6.slider-main-item-content__text  Максимально точная и атравматичная установка имплантов
+                      .col-4.slider-main-item-content__button.popup__init
+                        button.btn.btn-primary.btn-primary-all.popup-init-js(type="button" rel=slide.rel)=slide.headerButton
+
+

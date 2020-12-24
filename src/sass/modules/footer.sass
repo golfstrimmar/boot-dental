@@ -3,14 +3,20 @@
   .footer__wrapper
     +bg($back-main)
     overflow: hidden
-    margin: 5% 0 5% 0	
+  .container
+    +media-breakpoint-down(lg)
+      max-width: 100vw !important
+
   .footer__body
     position: relative
-    +media-breakpoint-down(lg)
-      padding: 0 0 200px 0	
+    // +media-breakpoint-down(lg)
+      // padding: 0 0 200px 0	
   .footer__item
     &_left
+      
       .footer-item__body
+        +media-breakpoint-down(lg)
+          padding: 3% 5%	
     &_map
       position: relative
       
@@ -44,16 +50,18 @@
     padding: 10% 5% 0 0	
     
   .footer-map
-    +media-breakpoint-down(lg)
-      +absolute( 100%, 200px, null,  0,  null,0,0)
-      bottom: 0
+
+    // +media-breakpoint-down(lg)
+      
+      // +absolute( 100%, 200px, null,  0,  null,0,0)
+      // bottom: 0
     &__img
       position: relative
       +bg(darken($active, 50%))
       padding: 0 0 0 263%
       +pro	
       +media-breakpoint-down(lg)
-        padding: 0 0 0 0	
+        padding: 0 0 40% 0	
 
   .nav-item .nav-item__body
     justify-content: start!important

@@ -42,13 +42,13 @@
       height: 52px
       background: #FFFFFF
       border-radius: 26px
-      margin: 50% 0 50% 120%
+      margin: 50% 0 50% 0%
       +media-breakpoint-down(sm)
         margin: 34% 0 70% 0%
   // ---------------------------------------------------------------
   // стрелки обычно открываются внизу. потом абсолютится весь блок стрелок. они   назначаются в файле mySlick, две стрелки просто разнесены внутри блока.
   .slider-main-arrows
-    +absolute( 100px, 30px, 90%,  82%,  null,0,0)
+    +absolute( 100px, 30px, 80%,  82%,  null,0,0)
     +jucb
     +alic
     +bg($active)
@@ -71,12 +71,14 @@
     //     return i + 1 + "/" + slider.slideCount;
     //   },
     // все NONE  а активная выносится куда нужно
-  .slick-dots 
+  .slick-dots
   .slick-dots li:not(.slick-active)
     display: none
-  .slick-active
+  li.slick-active
     z-index: 2
-    +absolute( 30px, 23px, 90%,  82%, null,34px,1px)
+    display: inline-flex
+    top: 90%
+    +absolute( 30px, 23px, 80%,  82%, null,34px,1px)
     padding: 4px 0 0 
     +media-breakpoint-down(sm)
       left: 60%

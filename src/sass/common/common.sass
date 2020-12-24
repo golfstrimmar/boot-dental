@@ -1,5 +1,5 @@
 *
-  outline: 1px solid red
+  // outline: 1px solid red
 
 [class*="col-"]
   padding: 0 0 0 0
@@ -32,7 +32,7 @@ body
   left: 0
   @include fdc
 .container
-  outline: 1px solid #4164ff
+  // outline: 1px solid #4164ff
   // background: #BBDEFB
   // width: 80%
   // width: 100%
@@ -173,11 +173,13 @@ input
   white-space: nowrap
   box-sizing: border-box
   padding: 18px 20px	
-
+  +media-breakpoint-only(xs)
+    font-size: calc(12px + (18-12)*((100vw-320px)/(567-320)))!important
 .common-Title
   font-size: 36px
   font-weight: normal
   line-height: 43px
   text-transform: uppercase
+  padding: 0 0 3% 0	
   +media-breakpoint-only(xs)
     font-size: calc(20px + (36-20)*((100vw-320px)/(576-320))) 

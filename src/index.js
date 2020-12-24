@@ -16,8 +16,8 @@ import './js/modal'
 // import "bootstrap";
 // import "popper.js";
 // import "bootstrap/js/dist/tab";
-import "bootstrap/js/dist/button";
-import "bootstrap/js/dist/collapse";
+// import "bootstrap/js/dist/button";
+// import "bootstrap/js/dist/collapse";
 
 
 // slick;
@@ -27,7 +27,7 @@ import "./js/mySlick.js";
 import './css/slick.css';
 
 // import "./js/plyr.js";
-import './css/style.css';// <--это icomoon
+import './css/fonts.css'
 import './css/plyr.css';
 
 // import './css/main.css';

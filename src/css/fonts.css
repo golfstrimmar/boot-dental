@@ -1,7 +1,15 @@
 @font-face {
-  font-family: Nexa;
-  src: local(Nexa Bold), url("/assets/fonts/Nexa Bold.woff") format("woff"), url("/assets/fonts/Nexa Bold.ttf") format("truetype"), url("/assets/fonts/Nexa Bold}") format("embedded-opentype"), url("/assets/fonts/Nexa Bold.svg  ") format("svg"), url("/assets/fonts/Nexa Bold.otf  "), url("/assets/fonts/Nexa Bold.eot  ");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+font-family: ProximaNova-Regular;
+src:
+local(ProximaNova-Regular),
+url('/assets/fonts/ProximaNova-Regular.woff') format('woff'),
+url('/assets/fonts/ProximaNova-Regular.ttf') format('truetype'),
+url('/assets/fonts/ProximaNova-Regular}') format('embedded-opentype'),
+url('/assets/fonts/ProximaNova-Regular.svg  ') format('svg'),
+url('/assets/fonts/ProximaNova-Regular.otf  '),
+url('/assets/fonts/ProximaNova-Regular.eot  ');
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
 }
+

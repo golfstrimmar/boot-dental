@@ -1,0 +1,21 @@
+section#modaL.modaL
+  .popup.first-popup
+    .popup__overlay
+    .popup__inner
+      #player(data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+      span.icon-close2.close-js
+
+  - 
+    slidesPopup = [
+        {class: "slide-1-popup" , title: "попап  слайда 1"},
+        {class: "slide-2-popup" , title: "попап  слайда 2"},
+        {class: "slide-3-popup" , title: "попап  слайда 3"},
+        {class: "slide-4-popup" , title: "попап  слайда 4"},
+        {class: "slide-5-popup" , title: "попап  слайда 5"},
+    ]
+  each slide in slidesPopup
+    div(class=['popup']  class=slide.class )
+      .popup__overlay
+      .popup__inner
+        p=slide.title
+        span.icon-close2.close-js
