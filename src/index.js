@@ -36,3 +36,4 @@ import './css/plyr.css';
 // главный файл стилей
 import './sass/style.sass';
 
+

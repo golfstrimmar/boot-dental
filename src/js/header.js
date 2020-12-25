@@ -17,7 +17,8 @@ wrapper.addEventListener("click", function (event) {
     menu.classList.add("header__menu_act");
     menu.appendChild(service);
     service.classList.add("header-service_act");
-    body.style.overflow = "hidden";
+    body.classList.add("lock");
+
   } else {
   if (
     headerOverlay !== event.target &&
@@ -28,12 +29,12 @@ wrapper.addEventListener("click", function (event) {
     menu.classList.remove("header__menu_act");
     service.classList.remove("header-service_act");
     header.appendChild(service);
-    body.style.overflow = "visible";
+    body.classList.remove("lock");
   }
   }
   if (event.target == document.querySelector(".header-close")) {
      menu.classList.remove("header__menu_act");
-     body.style.overflow = "visible";
+     body.classList.remove("lock");
   }
   
 });

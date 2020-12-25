@@ -1,3 +1,11 @@
+
+дальше нужно присобачить галерею с fancybox и mixitup --- 
+
+
+
+
+
+
 document.designMode = 'on'
 
 
