@@ -1,35 +1,41 @@
 .popup
   position: fixed
-  width: 100vw
-  height: 100vh
+  width: 100%
+  height: 100%
   top: 0
   left: 0
-  @include bg(rgba(0, 0, 0, 0.95))
+  +bg(rgba(0, 0, 0, 0.8))
+  overflow: scroll
   display: none
   z-index: 1000
   &__overlay
-    @include absolute(100%,100%,0,0,null,0%,0%)
+    width: 100%
+    min-height: 100vh
+    background-color: rgba(0, 0, 0, 0.56)
+    overflow: visible
+    z-index: 1000  //-------------- !!!
+    +center()
   &__inner
-    width: 70%
-    height: 70%
+    position: relative
+    flex: 0 1 70%
+    padding: 0 0 33% 0
+    +bg(  #ff9419)
     border: 30px solid DARKSLATEGRAY
     border-radius: 10px
-    position: relative
-    @include absolute(70%,70%,50%,50%,null,-50%,-50%)
-    @include bg(  #ff9419)
+    z-index: 1010   //-------------- !!!
     +media-breakpoint-only(xs)
-      width: 100%
-      height: 100%
+      flex: 0 1 100%
       
     .fa-times
       display: block
       color: black
-      @include absolute(12px,12px,-15px,null,-15px,0%,0%)
+      +absolute(12px,12px,-15px,null,-15px,0%,0%)
       font-size: 12px
       &:hover
         cursor: pointer
 
-
+// inner- flex
+// popup не ограничен. в итоге может быть больше окна и скролится
 
 
 

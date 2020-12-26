@@ -31,11 +31,6 @@ let Popup = $(".popup");
     player.stop();
   });
 
-  // $(".popup__overlay").on("click", function () {
-  //   Popup.fadeOut(200);
-  //  $("body").css("overflow", "visible");
-  //   player.stop();
-  // });
 
 $(document).on("mouseup", function (e) {
   if ($(".popup__overlay").is(e.target)) {
@@ -46,14 +41,4 @@ $(document).on("mouseup", function (e) {
   }
 });
 
-
 });
-
-
-//  $(document).on("mouseup", function (e) {
-//    let center = $(".board24_center");
-//    if (!center.is(e.target) && center.has(e.target).length === 0) {
-//      Popup.fadeOut(200);
-//      $("body").css("overflow", "visible");
-//    }
-//  });

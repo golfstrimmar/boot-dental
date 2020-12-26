@@ -1,13 +1,13 @@
 section#modaL.modaL
   .popup.first-popup
     .popup__overlay
-    .popup__inner
-      #player(data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
-      i.fa.fa-times.close-js
+      .popup__inner
+        #player(data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+        i.fa.fa-times.close-js
 
   - 
     slidesPopup = [
-        {class: "slide-1-popup" , title: "попап  слайда 1"},
+        {class: "slide-1-popup" , title: "попап  слайда 1  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis odit quo numquam deserunt, rerum quia rem? Unde dicta possimus ut hic perferendis mollitia asperiores iusto. Quasi reiciendis provident a consectetur at similique sit unde laborum voluptate! Ullam fuga quibusdam, ratione veritatis modi sit non, nam minima architecto nostrum labore. Esse, sint. Nobis explicabo necessitatibus laboriosam voluptatibus natus ullam optio deleniti! Error aliquid voluptates consequuntur nemo, deleniti reiciendis sunt accusantium eius illo natus dignissimos alias accusamus amet? Dolorum eveniet in eaque! Non sed praesentium veniam doloribus vitae, aut provident molestias aspernatur id velit ratione. Iusto adipisci unde mollitia ipsum ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis odit quo numquam deserunt, rerum quia rem? Unde dicta possimus ut hic perferendis mollitia asperiores iusto. Quasi reiciendis provident a consectetur at similique sit unde laborum voluptate! Ullam fuga quibusdam, ratione veritatis modi sit non, nam minima architecto nostrum labore. Esse, sint. Nobis explicabo necessitatibus laboriosam voluptatibus natus ullam optio deleniti! Error aliquid voluptates consequuntur nemo, deleniti reiciendis sunt accusantium eius illo natus dignissimos alias accusamus amet? Dolorum eveniet in eaque! Non sed praesentium veniam doloribus vitae, aut provident molestias aspernatur id velit ratione. Iusto adipisci unde mollitia ipsum ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis odit quo numquam deserunt, rerum quia rem? Unde dicta possimus ut hic perferendis mollitia asperiores iusto. Quasi reiciendis provident a consectetur at similique sit unde laborum voluptate! Ullam fuga quibusdam, ratione veritatis modi sit non, nam minima architecto nostrum labore. Esse, sint. Nobis explicabo necessitatibus laboriosam voluptatibus natus ullam optio deleniti! Error aliquid voluptates consequuntur nemo, deleniti reiciendis sunt accusantium eius illo natus dignissimos alias accusamus amet? Dolorum eveniet in eaque! Non sed praesentium veniam doloribus vitae, aut provident molestias aspernatur id velit ratione. Iusto adipisci unde mollitia ipsum ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis odit quo numquam deserunt, rerum quia rem? Unde dicta possimus ut hic perferendis mollitia asperiores iusto. Quasi reiciendis provident a consectetur at similique sit unde laborum voluptate! Ullam fuga quibusdam, ratione veritatis modi sit non, nam minima architecto nostrum labore. Esse, sint. Nobis explicabo necessitatibus laboriosam voluptatibus natus ullam optio deleniti! Error aliquid voluptates consequuntur nemo, deleniti reiciendis sunt accusantium eius illo natus dignissimos alias accusamus amet? Dolorum eveniet in eaque! Non sed praesentium veniam doloribus vitae, aut provident molestias aspernatur id velit ratione. Iusto adipisci unde mollitia ipsum ea. "},
         {class: "slide-2-popup" , title: "попап  слайда 2"},
         {class: "slide-3-popup" , title: "попап  слайда 3"},
         {class: "slide-4-popup" , title: "попап  слайда 4"},
@@ -16,9 +16,24 @@ section#modaL.modaL
   each slide in slidesPopup
     div(class=['popup']  class=slide.class )
       .popup__overlay
-      .popup__inner
-        p=slide.title
-        i.fa.fa-times.close-js
+        .popup__inner
+          p=slide.title
+          .fa.fa-times.close-js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //- если попап используется на разных страницах можно делать попапы как миксины и инклудить этот файл на страницы с попапами. а заводить только те миксины которые есть на этой странице        
 
