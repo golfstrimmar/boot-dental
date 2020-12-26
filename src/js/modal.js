@@ -6,28 +6,54 @@ $(document).ready(function () {
 
 // плеер только у окна с классом .first-popup поэтому делать проверку и включать если есть такой класс
 
+let Popup = $(".popup");
+
+
   $(".popup-init-js").on("click", function () {
 
-    let pop = $("div." + $(this).attr("rel"))
-    pop.fadeIn();
+  Popup.fadeOut(200);
+  let rel = $(this).attr("rel");
+  let pop = $("div." + rel);
+  if (Popup.hasClass(rel)) {
+    pop.fadeIn(200);
+  }
     if(pop.hasClass("first-popup")){
       player.play();
     }
+// $("body").addClass("lock");
     $("body").css("overflow","hidden");
-    $("body").addClass("lock");
 
   });
 
   $(".close-js").on("click", function () {
-    $(".popup").fadeOut(200);
+    Popup.fadeOut(200);
    $("body").css("overflow", "visible");
     player.stop();
   });
 
-  $(".popup__overlay").on("click", function () {
-    $(".popup").fadeOut(200);
-   $("body").css("overflow", "visible");
+  // $(".popup__overlay").on("click", function () {
+  //   Popup.fadeOut(200);
+  //  $("body").css("overflow", "visible");
+  //   player.stop();
+  // });
+
+$(document).on("mouseup", function (e) {
+  if ($(".popup__overlay").is(e.target)) {
+    Popup.fadeOut(200);
+    $("body").removeClass("lock");
+    $("body").css("overflow", "visible");
     player.stop();
-  });
+  }
+});
+
 
 });
+
+
+//  $(document).on("mouseup", function (e) {
+//    let center = $(".board24_center");
+//    if (!center.is(e.target) && center.has(e.target).length === 0) {
+//      Popup.fadeOut(200);
+//      $("body").css("overflow", "visible");
+//    }
+//  });

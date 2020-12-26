@@ -19,3 +19,36 @@ section#modaL.modaL
       .popup__inner
         p=slide.title
         i.fa.fa-times.close-js
+
+//- если попап используется на разных страницах можно делать попапы как миксины и инклудить этот файл на страницы с попапами. а заводить только те миксины которые есть на этой странице        
+
+
+//- //- например так 
+//- mixin meet-popup2()
+//-   .board24_meet-popup2.board24_meet__popup
+//-     .board24_meet__overlay
+//-       .board24_meet__center.board24_jucc.board24_center.board24_island
+//-         span.board24_cross.icon-close2.close-js
+//-         .board24_meet__title.board24_ts-4 Вы хотите создать заседание самостоятельно, или дать поручение секретарю?
+//-         .board24_meet__buttons.board24_jucc
+//-           //- +button-empty("Создать поручение 
+
+//- mixin meet-popup3()
+//-   .board24_meet-popup3.board24_meet__popup 
+//-     .board24_meet__overlay
+//-       form.board24_middle-inter-5.board24_middle-inter.board24_middle-inter-2.board24_center.board24_island
+//-         span.board24_cross.icon-close2.close-js
+
+//- а потом на нужной странице с одним из попапов так вызывать миксины, которые есть только на этой странице
+//- include ../../common/mixins
+//- include ../../modals/modals
+//- //- кнопка добавить из заседания
+//- +meet-1__popup1
+//- //- кнопка добавить из поручения
+//- +meet-1__popup2
+//- //- кнопка добавить новый вопрос
+//- +meet-1__popup3
+//- //- карандашик
+//- +meet-1__popup4
+//- //- синий текст справа статистики и комментарии по повестке
+//- +meet-1__popup5
