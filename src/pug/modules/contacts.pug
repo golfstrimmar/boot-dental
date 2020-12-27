@@ -6,15 +6,15 @@ section#contacts.contacts
     .container
       .contacts__body.row.justify-content-center
         form.connect__form.col-lg-8
-          h3 Запишитесь на консультацию и мы поможем вам
+          h3 Здесь происходит отправка данных формы через AJAX запрос на сервер
           div
             .connect__form-item
-              input#name(type='text' required='' placeholder=' Denzel Washington')
+              input#name(type='text' required='' placeholder=' Denzel Washington' name="name")
               label(for='name') ИМЯ*
             .connect__form-item
-              input#email(type='email' required='' placeholder=' thebestmail@mail.com')
-              label(for='email') Контактный телефон*
-            .connect__form-item Для расчета предварительной стоимости лечения вышлите выписки и снимки на почту Dentalbeauty@mail.ru
+              input#phone(type='phone' required='' placeholder='+3(096) ___ __ __'  name="phone")
+              label(for='phone') Контактный телефон*
+            .connect__form-item В итоге отправка данных и обновление формы происходит без перезагрузки страницы
+          #result.badge.badge-warning 
           .form__submit-button
-              button.btn.btn-primary.btn-primary-all.btn-primary-all_dark(type="submit") Записаться на консультацию
-          
+            button#sub-button.btn.btn-primary.btn-primary-all.btn-primary-all_dark(type="submit") Отправить данные

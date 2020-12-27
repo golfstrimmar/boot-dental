@@ -10,8 +10,9 @@ import Plyr from "plyr";
 import './js/common'
 import "./js/header";
 import './js/modal'
+import './js/contacts'
 
-
+// import 'form.php'
 // bootstrap;
 // import "bootstrap";
 // import "popper.js";
