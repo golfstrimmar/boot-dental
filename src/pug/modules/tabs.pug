@@ -1,0 +1,47 @@
+section#tabs.tabs
+  .tabs__wrapper
+    .container
+      h2 Табы работают независимо друг от друга на одном скрипте.
+      .tabs__body.row
+        - 
+          items = [
+            { title: "Лечение"},
+            { title: "Профилактика"},
+            { title: "Протезирование"},
+          ]
+
+        each item in items
+          .col-md-8.col-lg-3.tabs__item.tabs-item.mb-2
+            .tabs-item__body
+              .tabs-item__title.tabs-title-js=item.title 
+                .tabs-item__img.fa.fa-caret-right.tabs-img-js
+              .tabs__drop.tabs-drop.tabs-drop-js
+                .tabs-drop__body
+                  p.tabs-drop__info Lorem ipsum dolor sit Facere  ametassumenda corporis expedita in magnam, 
+                  p.tabs-drop__info , amet consectetur adipisicing elit.  Delectus, magni odio.
+                  p.tabs-drop__info aut incidunt iure velit hic sunt,
+                  p.tabs-drop__info enim, nemo itaque exercitationem ratione alias.
+
+section#tabsDep.tabsDep
+  .tabsDep__wrapper
+    .container
+      h2 Аккордеон (активный таб закрывает остальные) 
+      .tabsDep__body.tabs__body.row
+        - 
+          items = [
+            { title: "Лечение"},
+            { title: "Профилактика"},
+            { title: "Протезирование"},
+          ]
+
+        each item in items
+          .col-md-8.col-lg-3.tabs__item.tabs-item.mb-2
+            .tabs-item__body
+              .tabs-item__title.tabsDep-title-js=item.title 
+                .tabs-item__img.fa.fa-caret-right.tabsDep-img-js
+              .tabs__drop.tabs-drop.tabsDep-drop-js
+                .tabs-drop__body
+                  p.tabs-drop__info Lorem ipsum dolor sit Facere  ametassumenda corporis expedita in magnam, 
+                  p.tabs-drop__info , amet consectetur adipisicing elit.  Delectus, magni odio.
+                  p.tabs-drop__info aut incidunt iure velit hic sunt,
+                  p.tabs-drop__info enim, nemo itaque exercitationem ratione alias.

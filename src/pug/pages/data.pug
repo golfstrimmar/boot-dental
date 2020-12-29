@@ -1,0 +1,17 @@
+- 
+  items = [
+    { title: "Еще карта ", description: "Карта подгружена ajax с внешнего файла", img: "assets/img/work/img-14.svg"},
+    { title: "Еще карта", description: "Карта подгружена ajax с внешнего файла",img: "assets/img/work/img-16.svg"},
+    { title: "Еще карта", description: "Карта подгружена ajax с внешнего файла", img: "assets/img/work/img-11.svg"},
+    { title: "Еще карта", description: "Карта подгружена ajax с внешнего файла", img: "assets/img/work/img-11.svg"},
+    { title: "Еще карта", description: "Карта подгружена ajax с внешнего файла", img: "assets/img/work/img-11.svg"},
+    { title: "Еще карта", description: "Карта подгружена ajax с внешнего файла", img: "assets/img/work/img-11.svg"},
+    { title: "Еще карта", description: "Карта подгружена ajax с внешнего файла", img: "assets/img/work/img-11.svg"},
+    { title: "Еще карта", description: "Карта подгружена ajax с внешнего файла", img: "assets/img/work/img-17.svg"}
+  ]
+each item in items
+  li.work__item.work-item
+    .work-item__body
+      img(src=item.img,alt="img").work-item__img
+      .work-item__title=item.title
+      .work-item__description=item.description 

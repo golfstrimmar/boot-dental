@@ -122,6 +122,11 @@ module.exports = {
       template: "src/pug/pages/index.pug",
       filename: "./index.html",
     }),
+    new HtmlWebpackPlugin({
+      // hash: false,
+      template: "src/pug/pages/data.pug",
+      filename: "./data.html",
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: "src/img", to: "assets/img" },

@@ -4,7 +4,6 @@ section#work.work
       .row
         h2.common-Title Как мы работаем
         ul.work__body
-
             - 
               items = [
                 { title: "Комплексный подход ", description: "В клинике Dental&Beauty мы объединили   стоматологию и косметологию, чтобы сделать вас здоровыми, красивыми   и гармоничными.", img: "assets/img/work/img-14.svg "},
@@ -19,3 +18,12 @@ section#work.work
                   img(src=item.img,alt="img").work-item__img
                   .work-item__title=item.title
                   .work-item__description=item.description 
+        
+        ul.addFiles
+        .my-5
+        .alert.alert-warning.w-100(role='alert')
+          | Кнопка ниже открывает дополнительные карточки погружаем AJAX с внешнего файла. Работу AJAX можно увидеть только на хостинге или локальном сервере.
+        .col.text-center.after-posts
+          button.btn.btn-outline-info.load-more(type='button') Показать еще
+            span.spinner-border.text-primary(role='status')
+             

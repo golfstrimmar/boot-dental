@@ -4,9 +4,12 @@ section#contacts.contacts
     .ibg.bg
       img(src="assets/img/img-1.png",alt="img")
     .container
+     
       .contacts__body.row.justify-content-center
+
         form.connect__form.col-lg-8
-          h3 Здесь происходит отправка данных формы через AJAX запрос на сервер. Работу AJAX можно увидеть только при установке сайта на хостинге или открытии сайта на локальном сервере.
+          .alert.alert-warning.w-100.mb-6(role='alert') 
+            |Здесь происходит отправка данных формы через AJAX запрос на сервер. Работу AJAX можно увидеть только при установке сайта на хостинге или открытии сайта на локальном сервере.
           div
             .connect__form-item
               input#name(type='text' required='' placeholder=' Denzel Washington' name="name")
