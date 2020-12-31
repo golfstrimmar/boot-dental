@@ -20,7 +20,7 @@ sass--
 
 6.  div.item.container-fluid
       .ibg.bg
-        img(src="assets/img/dental-1.png",alt="")
+        img(src="assets/img/dental-1.webp",alt="")
       .ban__wrapper.row
         .container.bunner
           .bunner__body.row

@@ -75,7 +75,7 @@ Permanent Marker
    //-- просто высветляет ---> lighten( , 50%)
 
 ------------изображения так
-   img(src="assets/img/buscet/buscet-1.png",alt="") 
+   img(src="assets/img/buscet/buscet-1.webp",alt="") 
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
