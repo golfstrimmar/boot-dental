@@ -1,0 +1,16 @@
+при переносе на сервер
+
+
+--все изображения png перегнать в формат webp( это для     https://developers.google.com/speed/pagespeed/insights/)
+https://image.online-convert.com/ru/convert-to-webp
+
+-- удалить неиспользуемый код js     
+
+на настройках Advanced + Pretty print 
+https://closure-compiler.appspot.com/home
+
+-----удалить неиспользуемый код CSS
+Откройте инструменты разработчика(Ctrl + Shift + I)
+Откройте командное меню(Ctrl + Shift + P)
+Введите «Coverage» и нажмите кнопку записи
+Выберите CSS файл на вкладке «Coverage», он будет открыт в окне выше.
