@@ -5,35 +5,34 @@
   top: 0
   left: 0
   +bg(rgba(0, 0, 0, 0.8))
-  overflow: scroll
+  // overflow: auto
   display: none
   z-index: 1000
   &__overlay
     width: 100%
     min-height: 100vh
-    background-color: rgba(0, 0, 0, 0.56)
-    overflow: scroll
+    background-color: rgba(0, 0, 0, 0.9)
+    overflow: auto
     z-index: 1000  //-------------- !!!
     +center()
   &__inner
     position: relative
     flex: 0 1 70%
-    padding: 0 0 33% 0
+    padding: 0 0 
     +bg(  #ff9419)
     border: 30px solid DARKSLATEGRAY
     border-radius: 10px
     z-index: 1010   //-------------- !!!
-    +media-breakpoint-only(xs)
-      flex: 0 1 100%
+    @media (min-width: 1200px)
+      flex: 0 1 70%
       
-    .fa-times
+    i
       display: block
-      color: black
-      +absolute(12px,12px,-15px,null,-15px,0%,0%)
-      font-size: 12px
+      color: lighten(DARKSLATEGRAY, 20%)
+      +absolute(20px,20px,-24px,null,-22px,0%,0%)
+      font-size: 20px
       &:hover
         cursor: pointer
-
 // inner- flex
 // popup не ограничен. в итоге может быть больше окна и скролится
 

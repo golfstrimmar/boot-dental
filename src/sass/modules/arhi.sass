@@ -1,49 +1,48 @@
 .arhi
-
+  margin: 20px 0
   .arhi__wrapper
     +pro
 
-  .container-fluid
 
   .arhi__body
-    +bg($back-main)
-
-  .arhi__item
-    &:first-child
-      +media-breakpoint-down(lg)
-        padding: 0 0 90% 0	
+    +bg(lighten($active, 20%))
+    +jucb
+     
 
   .arhi-item
     position: relative
-
+    &:first-child
+      flex: 0 1 50%
+      height: 100%
+      padding: 0 0 30% 0	
+      +background-img("/assets/img/img-10.webp")
+      @media (max-width: 1199px)
+        padding: 0 0 50% 0	
+      @media (max-width: 768px)
+        flex: 0 1 100%
   .arhi-item__body
     padding: 17% 25% 10% 10%
   .arhi-item__title
 
   .arhi-item__description
     padding: 2% 0 5% 0
-    +media-breakpoint-down(sm)
+    @media (max-width: 767px)
       font-size: 16px
   .btn
   .arhi-item__title
-    font-family: ProximaNova-Regular
-    font-style: normal
-    font-weight: normal
     font-size: 36px
     line-height: 43px
     text-transform: uppercase
     color: #032E4A
-    +media-breakpoint-down(sm)
+    @media (max-width: 767px)
       font-size: 24px
 
   .arhi-item__button  
-    +juce
+    
     button
       width: 207px
       height: 52px
-      background: #FFFFFF
       border-radius: 26px
-      +font-family(Montserrat,600,14px,29px,$f-color)
 
 
 

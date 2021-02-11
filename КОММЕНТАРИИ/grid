@@ -1,0 +1,103 @@
+----------------------для контейнера--------------------------------------
+grid-template-columns: 1fr 2fr  3fr
+grid-template-columns: min-content 200px max-content
+grid-template-columns: 100px 200px minmax(100px,300px)
+grid-template-columns:  repeat(3, 1fr)
+grid-template-columns: 1fr 2fr  3fr
+grid-template-columns:  repeat(3, 1fr)
+
+grid-template-rows: repeat(3, 1fr)
+
+grid-column-gap: 15px
+grid-row-gap: 15px
+grid-gap: 15px
+grid-template-columns:  repeat(12,[col] 1fr)
+grid-template-rows: repeat(8,[row] 1fr)
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+grid-template-columns:  repeat(auto-fill, minmax(100px, 1fr))
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+repeat(auto-fill,100px);--------каждая строка заполнена возможным количеством колонок, учитывая их длину в 100px. Когда в строке не остается места, то элементы переходят на следующую строку.
+grid-template-columns:  repeat(auto-fill, minmax(100px, 1fr))------Сейчас браузер уместит в строку столько колонок с минимальной шириной в 100px, сколько он сможет. А если останется ещё место, то оно будет поровну распределено между всеми автозаполненными колонками.
+auto-fit будет вести себя почти как auto-fill, но если есть только одна строка и есть место для дополнительных колонок, но нет элементов, которые можно вставить эти колонки, то тогда он сделает ширину пустых колонок равную нулю
+
+auto-fit  --дотягивает элементы. пустое пространство исчезнет
+
+grid-template-areas: "","","",""
+repeat(2,auto)
+
+
+
+--------------------для блоков-----------------
+grid-column-start: 3
+grid-column-end: 4
+
+grid-row-start: 3
+grid-row-end: 4
+
+grid-column:3/4
+grid-row:3/4
+
+grid-area: 1/3/4/4
+grid-area:  grid-row-start/grid-column-start/grid-row-end/grid-column-end
+
+grid-column:  col 1/span 4
+grid-row: row 3/row 9
+
+grid-column:  span 2
+
+
+justify-content: start 
+justify-content: center 
+justify-content: space-around 
+justify-content: space-between 
+justify-content: space-evenly 
+justify-content: end
+justify-content: stretch
+
+align-content: start 
+align-content: center 
+align-content: space-around
+align-content: space-evenly  
+align-content: space-between 
+align-content: stretch
+
+
+----------выравнивание к контейнеру------
+align-items: start
+align-items: end
+align-items: center
+align-items: stretch
+
+
+justify-items: start
+justify-items: end
+justify-items: center
+justify-items: stretch
+
+
+---------выравнивание к элементу----------
+align-self: start
+align-self: end
+align-self: center
+align-self: stretch
+
+justify-self: start
+justify-self: end
+justify-self: center
+justify-self: stretch
+
+
+---------------
+grid-auto-flow: row
+grid-auto-flow: row dense
+grid-auto-flow: column
+
+---------------
+order: 1

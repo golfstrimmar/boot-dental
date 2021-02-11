@@ -1,123 +1,81 @@
 *
-  // outline: 1px solid red
-  
-
-[class*="col-"]
-  padding: 0 0 0 0
+  // outline: 1px solid green
+  box-sizing: border-box
 
 
-.font-main
-  font-family: Montserrat
-  font-style: normal
-  font-weight: 600
-  font-size: 18px
-  line-height: 22px
-  color: #032E4A!important
-body
-  font-family: Montserrat
-  font-style: normal
-  font-weight: 600
-  font-size: 18px
-  line-height: 22px
-  color: #032E4A
-.wrapper
-  overflow: hidden
-  @include fdc
-  min-height: 100vh
-  // background: $main-back 
-.page
-  position: absolute
-  width: 100%
-  min-height: 100%
-  top: 0
-  left: 0
-  @include fdc
 .container
   // outline: 1px solid #4164ff
-  // background: #BBDEFB
-  // width: 80%
-  // width: 100%
-  // width: 1170px
-  // margin: 0 auto 
+//------.container--------
+.container
+  // +alic
+  +jucs
+  // +jucb
+  max-width: 1300px
+  // height:
+  // flex: 0 1 100%
+  margin: 0 auto
+  // padding: 0 0 0 0
   // position: relative
-  // z-index: 2
-  // display: flex
-  // flex-flow: row wrap
+  // display: none
+  display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1340px)
+    margin: 0 20px
 
-  // @media  (max-width: 1170px)
-    // width: 80%
-    // width: 100%
-    // padding: 0 15px 	
-  +media-breakpoint-up(xl)
-    max-width: 1170px
- 
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    margin: 0 10px
+//-------------
 
-.ibg
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
 
-  img
-    display: none
+body
+  +bg(#F5F5F5)
+  font-family: 'Oswald', sans-serif
+  font-weight: 500
+  font-size: 15px
+  line-height: 1
+  color: #181818
+.wrapper
+  overflow: hidden
+  min-height: 100vh
+
 
 .bg
-  position: absolute
-  width: 100%
-  height: 100%
-  top: 0
-  left: 0
   background-repeat: no-repeat
   background-size: cover
   background-position: center
 
-  img
-    width: 100%
-    height: 100%
-
 a
-  color: inherit
+  display: block
   transition: all 0.2s ease-in-out
+  color: #181818
   &:hover
-    color: darken($back-main, 50%)
+    color: darken($green, 50%)
     cursor: pointer
-  // @include center();
-  // width: 100%;
-  // height: 100%
-
-  // &:hover
-  //   cursor: pointer
-  //   z-index: 5
-
-  // несовместимо с bootstrap !!!!!!!
-input
-  +bg( #FFFFFF)
-  padding: 0 0 0 15px
-  transition: all 0.3s ease-in-out
-  &::placeholder
-  & + i
-  &:focus
-    +bg($back-main!important)
-    +border(2px,#1976D2)
-    &::placeholder
-      opacity: 0
-      z-index: -1
-    & + i
-      +bg(#E3F2FD!important)
-      color: darken($back-main, 50%)
 
 
 .lock
   overflow: hidden
-
 .active
   opacity: 1
   visibility: visible
   display: block
 
+
+
 .up_down_btn
   position: fixed
-  background: -o-linear-gradient(357.31deg, #87CEFA 0, #4169E1 100%)
-  background: linear-gradient(92.69deg, #87CEEB, #755cdb)
+  background: -o-linear-gradient(357.31deg, #DEF1D7 0, #7AB764 100%)
+  background: linear-gradient(92.69deg, #DEF1D7, #7AB764)
   right: 20px
   bottom: 20px
   padding: 7px
@@ -148,39 +106,26 @@ input
       display: none
 
 
-.relative
-  position: relative
-
-.pro
-  width: 100%
-  height: 100%
-
-.plyr
-  +absolute( 100%, 100%, 0,  0,  null,0,0)
 
 
+.scroll-block::-webkit-scrollbar-track
+  border-radius: 4px
+
+.scroll-block::-webkit-scrollbar
+  width: 10px
+
+.scroll-block::-webkit-scrollbar-thumb
+  border-radius: 4px
+  background: #f0f2f5
+
+.scroll-block:hover::-webkit-scrollbar-thumb
+  background: #ececec
+
+
+.border-bg
+  +border(1px, #D7CCC8)
+  +bg(white)
+  border-radius: 5px
 
 
 
-// стили для общих блоков
-
-
-.btn-primary-all_dark
-  background: $f-color
-  border-radius: 40px
-  +font-family(Montserrat,500,18px,22px,$f-color)
-  color: white!important
-  text-transform: uppercase 
-  white-space: nowrap
-  box-sizing: border-box
-  padding: 18px 20px	
-  +media-breakpoint-only(xs)
-    font-size: calc(12px + (18-12)*((100vw-320px)/(567-320)))!important
-.common-Title
-  font-size: 36px
-  font-weight: normal
-  line-height: 43px
-  text-transform: uppercase
-  padding: 0 0 3% 0	
-  +media-breakpoint-only(xs)
-    font-size: calc(20px + (36-20)*((100vw-320px)/(576-320))) 

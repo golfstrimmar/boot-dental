@@ -1,0 +1,743 @@
+//------.grid-cards--------
+.grid-cards
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 20px 0
+  // position: relative
+  // display: none
+  // display: flex
+  display: grid
+  grid-template-columns: 1fr 200px
+  // grid-template-rows:
+  grid-template-areas: "grid-cards aside"
+  // grid-area:
+
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+    grid-template-columns: 1fr 
+    grid-template-areas: "aside" "grid-cards"
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.grid-cards__cards--------
+.grid-cards__cards
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  grid-area: grid-cards
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.grid-cards__vidget--------
+.grid-cards__vidget
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  max-height: 400px
+  // flex: 0 1 100%
+  margin: 0 20px 0 0
+  padding: 10px 15px
+  line-height: 140%
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  +border(1px,darken($active, 50%))
+  +bg($active)
+  color: white
+  border-radius: 10px
+  grid-area: aside
+
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    margin: 0 20px 20px
+    // padding: 0 0 0 0
+
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    margin: 0 10px  20px
+    // padding: 0 0 0 0
+//-------------
+//------.object-cards--------
+.object-cards
+
+  padding: 0 20px
+  display: grid
+  grid-gap: 20px
+  grid-template-columns: repeat(auto-fill, minmax(750px,1fr))
+  @media (max-width: 1199px)
+    
+  @media (max-width: 768px)
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr))
+    padding: 0 10px
+  @media (max-width: 578px)
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr))
+//-------------
+  
+  //------.object-card--------
+.object-card
+  min-height: 372px
+  +bg(white)
+  +border(1px,#BDBDBD)
+  box-shadow: 0px 0px 15px darken(#BDBDBD, 10%)
+  border-radius: 10px
+  display: grid
+  grid-template-columns:  minmax(330px, 1fr) 2fr  1fr
+  grid-template-rows: auto auto auto auto auto 1fr auto auto
+  grid-template-areas: "slider title price" "slider 1fr sub-price"  "slider adress adress" "slider info info" "slider properties properties"  "slider description description" "slider person person" "slider monitor monitor" 
+  @media (max-width: 1199px)
+    grid-template-columns:  100%
+    grid-template-rows: 40% auto auto auto auto auto auto 1fr auto auto
+    grid-template-areas: "slider" "title" 'price' "sub-price"  "adress" "info" " properties"  "description" "person" "monitor" 
+    min-height: 673px
+  @media (max-width: 767px)
+
+//-------------
+//------.object-card__slader--------
+.object-card__slider
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  grid-area: slider
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card__title--------
+.object-card__title
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  font-size: 20px
+  font-weight: 700
+  color: #586eb6
+  grid-area: title
+  padding: 10px 0 0px 15px
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    padding: 10px 0 10px 15px
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.object-card__price--------
+.object-card__price
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  font-size: 20px
+  font-weight: 700
+  grid-area: price
+  padding: 10px 0 5px 0
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+    padding: 10px 0 10px 15px
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.object-card__sub-price--------
+.object-card__sub-price
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  grid-area: sub-price
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    padding: 10px 0 10px 15px
+  
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card__adress--------
+.object-card__adress
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 10px 0 10px 15px
+  // position: relative
+  // display: none
+  // display: flex
+  grid-area: adress
+  
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.object-card__info--------
+.object-card__info
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 10px 0 10px 15px
+  // position: relative
+  // display: none
+  // display: flex
+  grid-area: info
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.object-card__properties--------
+.object-card__properties
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 10px 0 10px 15px
+  // position: relative
+  // display: none
+  // display: flex
+  grid-area: properties
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.object-card__description--------
+.object-card__description
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 10px 15px 10px 15px
+  // position: relative
+  // display: none
+  // display: flex
+  color: grey
+  opacity: .8
+  grid-area: description
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.object-card__person--------
+.object-card__person
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  grid-area:  person
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.properties--------
+.properties
+  +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.property__img--metro--------
+.property__img--metro
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  display: inline-flex
+  
+  font-weight: 700  
+  color: red
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.property__img--------
+.property__img
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  margin: 0 10px 0 0
+  font-size: 20px
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.property--------
+.property
+  +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  margin: 0 15px 0 0
+  &:last-child
+    margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.property__img--bus--------
+.property__img--bus
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  color: #0277BD
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card__monitor--------
+.object-card__monitor
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 15px 15px
+  // position: relative
+  // display: none
+  // display: flex
+  grid-area: monitor
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 578px)
+    display: none
+//-------------
+//------.object-card-person--------
+.object-card-person
+  // +alic
+  +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 10px 15px 10px 15px
+  // position: relative
+  // display: none
+  // display: flex
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card-person__avatar--------
+.object-card-person__avatar
+  // +alic
+  // +jucs
+  // +jucb
+  width: 40px
+  height: 40px
+  +bg(#56ccf2)
+  border-radius: 50%
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card-person__title--------
+.object-card-person__title
+  +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  margin: 0 0 0 10px
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card-person__time--------
+.object-card-person__time
+  +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  margin: 0 0 0 auto
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  color: grey
+  opacity: .8
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card-monitor--------
+.object-card-monitor
+  +alic
+  +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//--------------
+.object-card-monitor__button
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  margin: 0 10px 0 0
+  padding: 5px 10px
+  // position: relative
+  // display: none
+  // display: 
+
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card-monitor--------
+.object-card-monitor
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  button
+    min-height: 30px
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card-monitor__like--------
+.object-card-monitor__like
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  margin: 0 10px 0 0
+  padding: 0 10px
+  // position: relative
+  // display: none
+  // display: flex
+  i
+    color: $green
+    margin: 0 10px 0 0
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.object-card-monitor__location--------
+.object-card-monitor__location
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  margin: 0 0 0 0
+  padding: 0 10px
+  // position: relative
+  // display: none
+  // display: flex
+  i
+    color: red
+    
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.monitor-icon--------
+.monitor-icon
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  font-size: 20px
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+.slider__item
+  border-top-left-radius: 8px
+  border-bottom-left-radius: 8px
+  @media (max-width: 1199px)
+    border-top-left-radius: 8px
+    border-bottom-left-radius: 0
+    border-top-right-radius: 8px
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0

@@ -1,0 +1,42 @@
+section.first
+  header.header
+    .header__body.container
+      a(href="#!").header__logo
+        img(src="assets/img/logo.svg",alt="img")
+      nav.header__menu.menu
+        i.icon-x.header__close
+        ul.menu__list
+          - 
+            items = [
+              { title: "about" },
+              { title: "services" },
+              { title: "works" },
+              { title: "team" },
+              { title: "contacts" },
+            ]
+          each item in items
+            li.menu__item
+              a.menu__link(href="#!")=item.title
+      .header__info.info
+        a(href="#!").info_phone +7(000) 123 45 65
+        .info_search.border-bg
+          input(type='text' placeholder='Поиск')
+          i.icon-search
+      i.icon-align-justify.header__burger
+
+  section.bunner
+    .bunner__body.container
+      .bunner__text
+        p Данный сайт является прототипом сайта по медицинской тематике.   Сайт создан исключительно для демонстрации некоторых возможностей реализации отдельных блоков.
+        p <strong>Здесь: </strong>
+        p - большинство блоков сделаны на GRID. FLEX используется для одномерных фрагментов.
+        p - адаптивный header
+        p - слайдер с модальными окнами, каждое из которых содержит встроенный плеер. 
+        p - видео youtube подгружается ajax, что ускоряет загрузку сайта
+        p - скроллинг по пунктам меню, кнопка возврата наверх
+        p - кнопка "Показать еще" - подгрузка карточек из внешнего файла через AJAX 
+        p - несколько разновидностей табов
+        p - форма с отправкой данных на сервер через AJAX запрос.  
+        p в итоге - показатели pade speed
+      i.bunner__img
+      i.bunner__img

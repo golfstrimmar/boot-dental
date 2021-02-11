@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import Plyr from "plyr";
+// import Plyr from "plyr";
  
 // ==============================================
 
@@ -9,10 +9,11 @@ import Plyr from "plyr";
 
 import './js/common'
 import "./js/header";
+import "./js/mySlick.js";
 import './js/modal'
-import './js/contacts'
-import './js/tabs'
-import './js/work'
+// import './js/contacts'
+// import './js/tabs'
+// import './js/work'
 
 
 // bootstrap;
@@ -24,12 +25,12 @@ import './js/work'
 
 
 // slick;
-import "slick-carousel";
-// import "./js/slick.js";  <-- на всякий случай
-import "./js/mySlick.js";
+// import "slick-carousel";
+import "./js/slick.js"; 
+
 import './css/slick.css';
 
-// import "./js/plyr.js";
+import "./js/plyr.js";
 import './css/fonts.css'
 import './css/plyr.css';
 

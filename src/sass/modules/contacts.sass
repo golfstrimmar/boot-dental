@@ -30,7 +30,6 @@
     border-bottom: 2px solid #032E4A
     &:last-child
       border: none
-      +font-family(Montserrat,500,14px,21px,$f-color)
       +bg(white)
   .connect__form-item label
     position: absolute
@@ -45,7 +44,7 @@
     font-size: 19px
     line-height: 25px
     font-weight: 600
-    +media-breakpoint-down(sm)
+    @media (max-width: 767px)
       font-size: calc(14px + (19-14)*((100vw-320px)/(576-320)))
 
   .connect__form-item input, .connect__form-item textarea

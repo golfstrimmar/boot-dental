@@ -1,10 +1,9 @@
 .footer
 
   .footer__wrapper
-    +bg($back-main)
     overflow: hidden
   .container
-    +media-breakpoint-down(lg)
+    @media (max-width: 1199px)
       max-width: 100vw !important
 
   .footer__body
@@ -15,7 +14,7 @@
     &_left
       
       .footer-item__body
-        +media-breakpoint-down(lg)
+        @media (max-width: 1199px)
           padding: 3% 5%	
     &_map
       position: relative
@@ -25,7 +24,7 @@
   
   .footer-item__body
     padding: 8% 0 5% 0
-    +media-breakpoint-only(xs)
+    @media (max-width: 1199px)
       padding: 8% 5% 5%
     h2
       padding: 0 0 2% 0	
@@ -41,12 +40,11 @@
     padding: 0 0 0 0!important	
     
   .footer-item-content__right
-    +media-breakpoint-down(sm)
+    @media (max-width: 1199px)
       margin: 5% 0 0 0
   .footer-item-content__icons
   
   .footer-item__description
-    +font-family(Montserrat,500,14px,17px,$f-color)
     padding: 10% 5% 0 0	
     
   .footer-map
@@ -60,7 +58,7 @@
       +bg(darken($active, 50%))
       padding: 0 0 0 263%
       +pro	
-      +media-breakpoint-down(lg)
+      @media (max-width: 1199px)
         padding: 0 0 40% 0	
 
   .nav-item .nav-item__body
