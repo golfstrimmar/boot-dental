@@ -92,96 +92,96 @@ $("body").removeClass("lock");
 //       }
 //     }
 
-//     function backToTop() {
-//       upDownBtn.classList.add("up_down_btn-disabled");
-//       if (!check) {
-//         (function goTop() {
-//           if (window.pageYOffset !== 0) {
-//             window.scrollBy(0, -15);
-//             setTimeout(goTop, 0);
-//           } else {
-//             upDownBtn.classList.remove("up_down_btn-disabled");
-//           }
-//         })();
-//         return;
-//       } else if (check) {
-//         (function goBottom() {
-//           var match = Math.ceil(
-//             window.pageYOffset + document.documentElement.clientHeight
-//           );
+// $(document).ready(function (e) {
+//   function backToTop() {
+//     upDownBtn.classList.add("up_down_btn-disabled");
+//     if (!check) {
+//       (function goTop() {
+//         if (window.pageYOffset !== 0) {
+//           window.scrollBy(0, -15);
+//           setTimeout(goTop, 0);
+//         } else {
+//           upDownBtn.classList.remove("up_down_btn-disabled");
+//         }
+//       })();
+//       return;
+//     } else if (check) {
+//       (function goBottom() {
+//         var match = Math.ceil(
+//           window.pageYOffset + document.documentElement.clientHeight
+//         );
 
-//           if (match != document.documentElement.scrollHeight) {
-//             window.scrollBy(0, 15);
-//             setTimeout(goBottom, 0);
-//           } else {
-//             upDownBtn.classList.remove("up_down_btn-disabled");
-//           }
-//         })();
-//         return;
-//       }
+//         if (match != document.documentElement.scrollHeight) {
+//           window.scrollBy(0, 15);
+//           setTimeout(goBottom, 0);
+//         } else {
+//           upDownBtn.classList.remove("up_down_btn-disabled");
+//         }
+//       })();
+//       return;
 //     }
-
-//     window.addEventListener("scroll", trackScroll);
-//     upDownBtn.addEventListener("click", backToTop);
 //   }
-// )();
+
+//   window.addEventListener("scroll", trackScroll);
+//   upDownBtn.addEventListener("click", backToTop);
+// })();
 
 
-//          // ==скроллинг====ЯКОРЯ==============
-//       $(document).ready(function (e) {
-//         $('a[href^="#slider"]').click(function () {
-//           var target = $(this).attr("href");
-//           $("html, body").animate(
-//             { scrollTop: $(target).offset().top - 60 },
-//             800
-//           ); //800 - длительность скроллинга в мс
-//               menu.classList.remove("header__menu_act");
-//               service.classList.remove("header-service_act");
-//               header.appendChild(service);
-//               body.style.overflow = "visible";
-//           return false;
-//         });
-//       }),
-//       $(document).ready(function (e) {
-//         $('a[href^="#work"]').click(function () {
-//           var target = $(this).attr("href");
-//           $("html, body").animate(
-//             { scrollTop: $(target).offset().top - 60 },
-//             800
-//           ); //800 - длительность скроллинга в мс
-//               menu.classList.remove("header__menu_act");
-//               service.classList.remove("header-service_act");
-//               header.appendChild(service);
-//               body.style.overflow = "visible";
-//           return false;
-//         });
-//       }),
-//       $(document).ready(function (e) {
-//         $('a[href^="#arhi"]').click(function () {
-//           var target = $(this).attr("href");
-//           $("html, body").animate(
-//             { scrollTop: $(target).offset().top - 60 },
-//             800
-//           ); //800 - длительность скроллинга в мс
-//               menu.classList.remove("header__menu_act");
-//               service.classList.remove("header-service_act");
-//               header.appendChild(service);
-//               body.style.overflow = "visible";
-//           return false;
-//         });
-//       }),
-//       $(document).ready(function (e) {
-//         $('a[href^="#footer"]').click(function () {
-//           var target = $(this).attr("href");
-//           $("html, body").animate(
-//             { scrollTop: $(target).offset().top - 60 },
-//             800
-//           ); //800 - длительность скроллинга в мс
-//               menu.classList.remove("header__menu_act");
-//               service.classList.remove("header-service_act");
-//               header.appendChild(service);
-//               body.style.overflow = "visible";
-//           return false;
-//         });
-//       })
+      //    // ==скроллинг====ЯКОРЯ==============
+      // $(document).ready(function (e) {
+      //   $('a[href^="#slider"]').click(function () {
+      //     var target = $(this).attr("href");
+      //     $("html, body").animate(
+      //       { scrollTop: $(target).offset().top - 60 },
+      //       800
+      //     ); //800 - длительность скроллинга в мс
+      //         menu.classList.remove("header__menu_act");
+      //         service.classList.remove("header-service_act");
+      //         header.appendChild(service);
+      //         body.style.overflow = "visible";
+      //     return false;
+      //   });
+      // }),
+      // $(document).ready(function (e) {
+      //   $('a[href^="#work"]').click(function () {
+      //     var target = $(this).attr("href");
+      //     $("html, body").animate(
+      //       { scrollTop: $(target).offset().top - 60 },
+      //       800
+      //     ); //800 - длительность скроллинга в мс
+      //         menu.classList.remove("header__menu_act");
+      //         service.classList.remove("header-service_act");
+      //         header.appendChild(service);
+      //         body.style.overflow = "visible";
+      //     return false;
+      //   });
+      // }),
+      // $(document).ready(function (e) {
+      //   $('a[href^="#arhi"]').click(function () {
+      //     var target = $(this).attr("href");
+      //     $("html, body").animate(
+      //       { scrollTop: $(target).offset().top - 60 },
+      //       800
+      //     ); //800 - длительность скроллинга в мс
+      //         menu.classList.remove("header__menu_act");
+      //         service.classList.remove("header-service_act");
+      //         header.appendChild(service);
+      //         body.style.overflow = "visible";
+      //     return false;
+      //   });
+      // }),
+      // $(document).ready(function (e) {
+      //   $('a[href^="#footer"]').click(function () {
+      //     var target = $(this).attr("href");
+      //     $("html, body").animate(
+      //       { scrollTop: $(target).offset().top - 60 },
+      //       800
+      //     ); //800 - длительность скроллинга в мс
+      //         menu.classList.remove("header__menu_act");
+      //         service.classList.remove("header-service_act");
+      //         header.appendChild(service);
+      //         body.style.overflow = "visible";
+      //     return false;
+      //   });
+      // })
      

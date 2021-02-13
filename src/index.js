@@ -8,12 +8,13 @@ import $ from 'jquery';
 
 
 import './js/common'
+import "./js/tabs";
+import "./js/work";
 import "./js/header";
 import "./js/mySlick.js";
 import './js/modal'
-// import './js/contacts'
-// import './js/tabs'
-// import './js/work'
+import './js/contacts'
+
 
 
 // bootstrap;

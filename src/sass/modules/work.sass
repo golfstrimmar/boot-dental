@@ -1,0 +1,129 @@
+.work
+.work__wrapper
+    position: relative
+    padding: 5% 0
+
+
+.work__body
+    +jucb
+    margin: 20px 0 0 0
+    @media (max-width: 767px)
+      +jucc		
+.work__item
+    margin: 0 0 20px 0
+.work-item
+    flex: 0 1 23%
+    @media (max-width: 1199px)
+      flex: 0 1 40%
+      margin: 0 0 20px 0
+    @media (max-width: 1199px)
+      margin: 0 20px 20px 20px
+
+
+.work-item__body
+    background: rgba(227,247,248, .7)
+    box-shadow: 0px 0px 15px rgba(28, 41, 83, 0.15)
+    border-radius: 40px
+    min-height: 400px
+    min-width: 270px
+    padding: 45px 30px 30px
+
+.work-item__title
+    text-transform: uppercase
+    padding: 28px 0 18px 0	
+
+.spinner-border
+  width: 15px
+  height: 15px
+  margin: 0 0 0 10px
+  border: 2px solid transparent
+  border-left: 2px solid $active
+  border-right: 2px solid $active
+  border-bottom: 2px solid $active
+  border-radius: 15px
+  animation: spin 1s linear infinite
+  &.act
+    display: inline-block
+@keyframes spin
+  from  
+    transform: rotate(0deg)
+  to   
+    transform: rotate(360deg)
+
+
+
+
+
+
+
+
+.load-more
+  padding: 5px 10px	
+  span
+    display: none
+//------.after-posts--------
+.after-posts
+  // +alic
+  +jucc
+  // +jucb
+  width:  100%
+  // height:
+  // flex: 0 1 100%
+  margin: 20px 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+.addFiles
+  @extend .work__body
+
+//------.alert--------
+.alert
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  padding: 5px
+  border-radius: 5px
+  border: 1px solid #856404
+  background-color: #fff3cd
+  color: #856404
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+
+

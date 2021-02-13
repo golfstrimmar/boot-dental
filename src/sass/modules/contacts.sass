@@ -1,120 +1,384 @@
 
-
-.contacts
+//------.contacts__body--------
+.contacts__body
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 100px 0 
+  // position: relative
+  // display: none
   // display: flex
-  // width: 80%
-  // margin: 0 0 3% 0
-  // +media-breakpoint-down(sm)
-  //   font-size: 24px!important
-  //   margin: 0 0 5% 0
-  .connect__form
-    background-color: white
-    box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.83)
-    padding: 4% 3%
-    border-radius: 40px
-    h3
-      padding: 0 0 6% 0	
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.contacts__wrapper--------
+.contacts__wrapper
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  +background-img("/assets/img/img-1.webp")
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
 
-  
-  .contacts__body
-    padding: 20% 0 15% 0
+
+//------.contacts-form--------
+.contacts-form
+  // +alic
+  // +jucs
+  +jucb
+  +bg(white) 
+  box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.83)
+  padding: 30px 40px
+  border-radius: 40px
+  // height:
+  // flex: 0 1 100%
+
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    padding: 15px 20px
     border-radius: 10px
-  .form__submit-button
-    +jucc
-  
-  
-  .connect__form-item
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.contacts__form--------
+.contacts__form
+  margin: 0 auto
+  width:60%
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    width:80%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.contacts-form__submit-button--------
+.contacts-form__submit-button
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  flex: 0 1 50%
+  margin: 30px auto
+  padding: 10px 20px
+  box-shadow: 0px 0px 30px rgba(66,165,245, .6)
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//------.contacts-form__text--------
+.contacts-form__text
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 5px 
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  border-radius: 5px
+  +border(1px, #856404)
+  +bg(#FFF3CD)
+  color: #856404
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.contacts-form__item--------
+.contacts-form__item
+    // +alic
+    // +jucs
+    // +jucb
+    // width:
+    min-height: 30px
+    flex: 0 1 100%
+    margin: 30px 0 0 0
+    // padding: 0 0 0 0
     position: relative
-    margin-bottom: 52px
-    +bg($active) 
-    border-bottom: 2px solid #032E4A
-    &:last-child
-      border: none
-      +bg(white)
-  .connect__form-item label
-    position: absolute
-    top: 0
-    left: 0
-    transition: 0.3s
-    transform: translateY(0)
-    pointer-events: none
-    color: #0d0d0d
-    width: 100%
-    font-family: "Montserrat", sans-serif
-    font-size: 19px
-    line-height: 25px
-    font-weight: 600
+    // display: none
+    // display: flex
+    // display: grid
+    // grid-template-columns:
+    // grid-template-rows:
+    // grid-template-areas:
+    // grid-area:
+    label
+      position: absolute
+      top: 50%
+      left: 10px
+      transition: 0.3s
+      transform: translateY(-50%)
+      pointer-events: none
+      width: 100%
+      
+    input::-webkit-input-placeholder
+      color: transparent
+    @media (max-width: 1199px)
+      // flex: 0 1 100%
+      // margin: 0 0 0 0
+      // padding: 0 0 0 0
     @media (max-width: 767px)
-      font-size: calc(14px + (19-14)*((100vw-320px)/(576-320)))
-
-  .connect__form-item input, .connect__form-item textarea
-    width: 100%
-    outline: none
-    border: 1px solid transparent
-    background-color: transparent
-    background-repeat: no-repeat
-    background-position: 100% 5px
-    border-bottom: 1px solid #d8d8d8
-    padding-bottom: 17px
-    resize: none
-    font-family: "Montserrat", sans-serif
-    font-size: 19px
-    line-height: 25px
-    font-weight: 500
-
-  .connect__form-item input:focus + label,
-  .connect__form-item textarea:focus + label,
-  .connect__form-item input:not(:placeholder-shown) + label,
-  .connect__form-item textarea:not(:placeholder-shown) + label,
-  .connect__form-item input:-webkit-autofill + label,
-  .connect__form-item textarea:-webkit-autofill + label
+      // flex: 0 1 100%
+      // margin: 0 0 0 0
+      // padding: 0 0 0 0
+//-------------
+.contacts-form__item input:focus + label,
+.contacts-form__item textarea:focus + label,
+.contacts-form__item input:not(:placeholder-shown) + label,
+.contacts-form__item textarea:not(:placeholder-shown) + label,
+.contacts-form__item input:-webkit-autofill + label,
+.contacts-form__item textarea:-webkit-autofill + label
     transform: translateY(-34px)
-    font-size: 14px
+    font-size: 12px
+    left: 0
+    color: lighten($active, 20%)
 
-  /* ------------------------
-  .connect__form-item input:focus + label
-    transform: translateY(-34px)
-    font-size: 14px
-  .connect__form-item textarea:focus + label
-    transform: translateY(-34px)
-    font-size: 14px
-  .connect__form-item input:not(:placeholder-shown) + label
-    transform: translateY(-34px)
-    font-size: 14px
-  .connect__form-item textarea:not(:placeholder-shown) + label
-    transform: translateY(-34px)
-    font-size: 14px
-  .connect__form-item input:-webkit-autofill + label
-    transform: translateY(-34px)
-    font-size: 14px
-  .connect__form-item textarea:-webkit-autofill + label
-    transform: translateY(-34px)
-    font-size: 14px
-  /* --------------------------------------
 
-  .connect__form-item input::-webkit-input-placeholder, .connect__form-item textarea::-webkit-input-placeholder
-    color: transparent
+.badge-warning
+  margin: 20px 0
+  +bg(#E57373)
+  color: white	
+  padding: 20px
+  flex: 0 1 100%
+  transition: all 0.3s ease-in-out
+.badge-success
+  +bg($green)
+  color: white
+  margin: 20px 0
+  padding: 20px
+  flex: 0 1 100%
+  transition: all 0.3s ease-in-out
 
-  .connect__form-item input::-moz-placeholder, .connect__form-item  textarea::-moz-placeholder
-    color: transparent
+//------#result--------
+#result
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
 
-  .connect__form-item input:-ms-input-placeholder, .connect__form-item textarea:-ms-input-placeholder
-    color: transparent
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
 
-  .connect__form-item input:-moz-placeholder, .connect__form-item   textarea:-moz-placeholder
-    color: transparent
 
-  .connect__form-item input:not(:placeholder-shown):invalid, .connect__form-item textarea:not(:placeholder-shown):invalid
-    color: #fa333c
-    border-bottom: 1px solid #fa333c
-    font-family: "Montserrat", sans-serif
-    font-size: 15px
-    font-weight: 600
+//-------------
+// .contacts
+//   // display: flex
+//   // width: 80%
+//   // margin: 0 0 3% 0
+//   // +media-breakpoint-down(sm)
+//   //   font-size: 24px!important
+//   //   margin: 0 0 5% 0
+//   .connect__form
+//     background-color: white
+//     box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.83)
+//     padding: 4% 3%
+//     border-radius: 40px
+//     h3
+//       padding: 0 0 6% 0	
 
-  #result
-    margin: 0 0 20px 0
-    padding: 20px
-    transition: all 0.3s ease-in-out	
+  
+//   .contacts__body
+//     padding: 20% 0 15% 0
+//     border-radius: 10px
+//   .form__submit-button
+//     +jucc
+  
+  
+//   .connect__form-item
+//     position: relative
+//     margin-bottom: 52px
+//     +bg($active) 
+//     border-bottom: 2px solid #032E4A
+//     &:last-child
+//       border: none
+//       +bg(white)
+//   .connect__form-item label
+//     position: absolute
+//     top: 0
+//     left: 0
+//     transition: 0.3s
+//     transform: translateY(0)
+//     pointer-events: none
+//     color: #0d0d0d
+//     width: 100%
+//     font-family: "Montserrat", sans-serif
+//     font-size: 19px
+//     line-height: 25px
+//     font-weight: 600
+//     @media (max-width: 767px)
+//       font-size: calc(14px + (19-14)*((100vw-320px)/(576-320)))
+
+//   .connect__form-item input, .connect__form-item textarea
+//     width: 100%
+//     outline: none
+//     border: 1px solid transparent
+//     background-color: transparent
+//     background-repeat: no-repeat
+//     background-position: 100% 5px
+//     border-bottom: 1px solid #d8d8d8
+//     padding-bottom: 17px
+//     resize: none
+//     font-family: "Montserrat", sans-serif
+//     font-size: 19px
+//     line-height: 25px
+//     font-weight: 500
+
+//   .connect__form-item input:focus + label,
+//   .connect__form-item textarea:focus + label,
+//   .connect__form-item input:not(:placeholder-shown) + label,
+//   .connect__form-item textarea:not(:placeholder-shown) + label,
+//   .connect__form-item input:-webkit-autofill + label,
+//   .connect__form-item textarea:-webkit-autofill + label
+//     transform: translateY(-34px)
+//     font-size: 14px
+
+//   /* ------------------------
+//   .connect__form-item input:focus + label
+//     transform: translateY(-34px)
+//     font-size: 14px
+//   .connect__form-item textarea:focus + label
+//     transform: translateY(-34px)
+//     font-size: 14px
+//   .connect__form-item input:not(:placeholder-shown) + label
+//     transform: translateY(-34px)
+//     font-size: 14px
+//   .connect__form-item textarea:not(:placeholder-shown) + label
+//     transform: translateY(-34px)
+//     font-size: 14px
+//   .connect__form-item input:-webkit-autofill + label
+//     transform: translateY(-34px)
+//     font-size: 14px
+//   .connect__form-item textarea:-webkit-autofill + label
+//     transform: translateY(-34px)
+//     font-size: 14px
+//   /* --------------------------------------
+
+//   .connect__form-item input::-webkit-input-placeholder, .connect__form-item textarea::-webkit-input-placeholder
+//     color: transparent
+
+//   .connect__form-item input::-moz-placeholder, .connect__form-item  textarea::-moz-placeholder
+//     color: transparent
+
+//   .connect__form-item input:-ms-input-placeholder, .connect__form-item textarea:-ms-input-placeholder
+//     color: transparent
+
+//   .connect__form-item input:-moz-placeholder, .connect__form-item   textarea:-moz-placeholder
+//     color: transparent
+
+//   .connect__form-item input:not(:placeholder-shown):invalid, .connect__form-item textarea:not(:placeholder-shown):invalid
+//     color: #fa333c
+//     border-bottom: 1px solid #fa333c
+//     font-family: "Montserrat", sans-serif
+//     font-size: 15px
+//     font-weight: 600
+
+
 
 
 

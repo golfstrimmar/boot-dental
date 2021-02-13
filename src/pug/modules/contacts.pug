@@ -1,23 +1,17 @@
 
 section#contacts.contacts
- .contacts__wrapper(style="position: relative")
-    .ibg.bg
-      img(src="assets/img/img-1.webp",alt="img")
-    .container
-     
-      .contacts__body.row.justify-content-center
-
-        form.connect__form.col-lg-8
-          .alert.alert-warning.w-100.mb-6(role='alert') 
+  .contacts__wrapper
+      .contacts__body.container
+        form.contacts__form.contacts-form
+          p.contacts-form__text
             |Здесь происходит отправка данных формы через AJAX запрос на сервер. Работу AJAX можно увидеть только при установке сайта на хостинге или открытии сайта на локальном сервере.
-          div
-            .connect__form-item
+          .contacts-form__item
               input#name(type='text' required='' placeholder=' Denzel Washington' name="name")
               label(for='name') ИМЯ*
-            .connect__form-item
+          .contacts-form__item
               input#phone(type='phone' required='' placeholder='+3(096) ___ __ __'  name="phone")
               label(for='phone') Контактный телефон*
-            .connect__form-item В итоге отправка данных и обновление формы происходит без перезагрузки страницы
-          #result.badge.badge-warning 
-          .form__submit-button
-            button#sub-button.btn.btn-primary.btn-primary-all.btn-primary-all_dark(type="submit") Отправить данные
+          .contacts-form__item 
+            p.contacts-form__text В итоге отправка данных и обновление формы происходит без перезагрузки страницы
+          #result
+          button#sub-button.btn.btn--success(type='button').contacts-form__submit-button Отправить данные

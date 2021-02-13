@@ -1,0 +1,225 @@
+.tabs
+  +bg($active)
+.tabs__wrapper
+  padding: 2% 0 
+.container
+
+    
+//------.tabs__body--------
+.tabs__body
+  +juca
+  flex: 0 1 100%
+  padding: 6% 0 2%
+  @media (max-width: 1199px)
+    +jucb
+//-------------
+
+.tabs__item
+  
+.tabs-item
+  box-shadow: 0px 5px 14px 4px rgba(0, 0, 0, 0.15)
+  border-radius: 5px
+  +bg(lighten($active,20%))
+  +border(1px,darken($active, 30%))
+  min-height: 40px
+  max-height: 40px
+  width: 200px
+  transition: all 0.2s ease-in-out
+  &:hover
+    cursor: pointer
+    +bg(lighten($active,10%))
+    box-shadow: 0px 5px 14px 4px rgba(0, 0, 0, 0.3)
+  &:hover
+    & .tabs-item__title
+      color: #006064
+
+.tabs-item__body
+  +pro
+  +center
+  position: relative
+//------.tabs-item__title--------
+.tabs-item__title
+  +center
+  min-height: 40px
+  width :100%
+  padding: 0 10px
+  position: relative
+  
+//-------------
+.tabs-item__img
+  transform: rotate(0deg)
+  margin: 0 0 0 20px
+  transition: all 0.2s ease-in-out
+  +absolute(auto,auto,50%,auto,10px,0%,-50%)
+
+ 
+.tabs-drop
+  display: none
+  padding: 10px
+  &__info
+    font-size: 14px
+    font-weight: 300
+  &.act
+    z-index: 10000
+    +bg(lighten($active,30%))
+    border-bottom-right-radius: 5px
+    border-bottom-left-radius: 5px
+    +absolute(auto,auto,40px,0,auto,0%,0%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------.tabs__wrapper--Dep--------
+.akr
+  +bg(#3D5AFE)
+  h2
+    text-align: center
+    color: #A7FFEB
+  @media (max-width: 1199px)
+  @media (max-width: 767px)
+//-------------
+//------.akr__wrapper--------
+.akr__wrapper
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  padding: 2% 0
+  height: auto
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+//------.akr__body--------
+.akr__body
+  +fdc
+  +alic
+  flex: 0 1 100%
+  padding: 6% 0 2%
+  @media (max-width: 1199px)
+    +jucb
+
+
+//------.akr__item--------
+.akr__item
+  box-shadow: 0px 5px 14px 4px rgba(0, 0, 0, 0.15)
+  border-radius: 5px
+  +bg(lighten($active,20%))
+  +border(1px,darken($active, 30%))
+  min-height: 40px
+  width: 200px
+  display: table!important
+  transition: all 0.2s ease-in-out
+  &.act
+    max-height: 100%
+    
+  &:hover
+    cursor: pointer
+    +bg(lighten($active,10%))
+    box-shadow: 0px 5px 14px 4px rgba(0, 0, 0, 0.3)
+  &:hover
+    & .tabs-item__title
+      color: #006064
+//-------------
+
+//------.akr-item--------
+.akr-item
+  // +alic
+  // +jucs
+  // +jucb
+  // width:
+  // height:
+  // flex: 0 1 100%
+  // margin: 0 0 0 0
+  // padding: 0 0 0 0
+  // position: relative
+  // display: none
+  // display: flex
+  // display: grid
+  // grid-template-columns:
+  // grid-template-rows:
+  // grid-template-areas:
+  // grid-area:
+  +center
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.akr-item__title--------
+.akr-item__title
+  +center
+  min-height: 40px
+  width :100%
+  padding: 0 10px
+  position: relative
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+
+//------.akr-item__img--------
+.akr-item__img
+  transform: rotate(0deg)
+  margin: 0 0 0 20px
+  transition: all 0.2s ease-in-out
+  +absolute(auto,auto,50%,auto,10px,0%,-50%)
+  @media (max-width: 1199px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+  @media (max-width: 767px)
+    // flex: 0 1 100%
+    // margin: 0 0 0 0
+    // padding: 0 0 0 0
+//-------------
+.akr-drop
+  display: none
+  padding: 10px
+  &__info
+    font-size: 14px
+    font-weight: 300
+  &.act
+    +bg(lighten($active,30%))
+        
+    // border-bottom-right-radius: 5px
+    // border-bottom-left-radius: 5px

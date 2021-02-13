@@ -1,14 +1,8 @@
 
 section#footer.footer
- .footer__wrapper
-    .container
-      .footer__body.row
-        .col-xs-12.order-2.order-xl-1.col-xl-8.footer__item_left.footer-item
-          .footer-item__body
-            h2.common-Title Контакты 
-            .footer-item__content.footer-item-content
-              .footer-item-content__body.row.no-gutters
-                ul.footer-item-content__left.col-md-6.flex-column.align-items-start
+      .footer__body.container
+            h2.footer__title Контакты 
+            ul.footer__info.footer-info
                   - 
                     items = [
                       { 
@@ -38,42 +32,28 @@ section#footer.footer
                     ]
                   
                   each index in items
-                    li.nav-item
-                      .nav-item__body.d-flex
-                        img(src=index.src,alt="img").nav-item__icon
-                        .nav-item__text.nav-item-text
-                          .nav-item-text__body.row.no-gutters.flex-column
-                            .nav-item__text=index.text1
-                            .nav-item__text=index.text2
-                            .nav-item__text=index.text3
-
-                
-                .footer-item-content__right.col-12.col-md-4
-                  ul.footer-item-content__icons.row.no-gutters.justify-content-md-between.justify-content-around 
+                    li.footer-info__item
+                        img(src=index.src,alt="img").footer-info__icon
+                        .footer-info__text
+                            a(href="#!")=index.text1
+                            a(href="#!")=index.text2
+                            a(href="#!")=index.text3
+            ul.footer__social.footer-social
                     - 
-
                       items = [
                         { src: " assets/img/footer/img-1.svg" },
                         { src: " assets/img/footer/facebook.svg" },
                         { src: " assets/img/footer/whatsapp.svg" },
                         { src: "assets/img/footer/youtube.svg " },
                       ]
-
                     each item in items
-                      li
-                        a(href="#!")  
+                      li.footer-social__item
+                        a(href="#!").footer-social__link  
                           img(src=item.src,alt="img")
+            .footer__description 2020. Клиника «Dental@Beauty» Все права защищены. © ООО «‎ДенталБьюти»  Цены, указанные на сайте, не являются публичной офертой. Уточняйте стоимость в клинике. Есть противопоказания. Необходима консультация специалиста
+            .footer__map
 
 
-
-            .footer-item__description 2020. Клиника «Dental@Beauty» Все права защищены. © ООО «‎ДенталБьюти»  Цены, указанные на сайте, не являются публичной офертой. Уточняйте стоимость в клинике. Есть противопоказания. Необходима консультация специалиста
-        .col-xs-12.order-1.order-xl-2.col-xl-3.footer-map
-          .footer-map__img
-            .ibg.bg
-              img(src="assets/img/footer/map.webp",alt="")
-
-
-//- -------------------------------------------------------------------------------------------------------------
 
 .up_down_btn(title='Наверх') ↑
 
