@@ -14,6 +14,8 @@ import "./js/header";
 import "./js/mySlick.js";
 import './js/modal'
 import './js/contacts'
+import "./js/start-button";
+import "./js/scrolling";
 
 
 

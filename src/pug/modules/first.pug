@@ -8,15 +8,15 @@ section.first
         ul.menu__list
           - 
             items = [
-              { title: "about" },
-              { title: "services" },
-              { title: "works" },
-              { title: "team" },
-              { title: "contacts" },
+              { title: "about" , link:"#bunner"},
+              { title: "services" ,link:"#cards"},
+              { title: "works" ,link:"#slider"},
+              { title: "team" ,link:"#arhi"},
+              { title: "contacts" ,link:"#contacts"},
             ]
           each item in items
             li.menu__item
-              a.menu__link(href="#!")=item.title
+              a.menu__link(href=item.link)=item.title
       .header__info.info
         a(href="#!").info_phone +7(000) 123 45 65
         .info_search.border-bg
@@ -24,15 +24,15 @@ section.first
           i.icon-search
       i.icon-align-justify.header__burger
 
-  section.bunner
+  section.bunner#bunner
     .bunner__body.container
       .bunner__text
         p Данный сайт является прототипом сайта по медицинской тематике.   Сайт создан исключительно для демонстрации некоторых возможностей реализации отдельных блоков.
         p <strong>Здесь: </strong>
         p - где это необходимо блоки на GRID. FLEX используется для одномерных фрагментов.
         p - верстка БЭМ
-        p - слайдер с модальными окнами, каждое из которых содержит встроенный плеер. 
-        p - видео youtube подгружается ajax, что ускоряет загрузку сайта
+        p - слайдер с модальными окнами
+        p - видео youtube в модальном окне (plyr)
         p - скроллинг по пунктам меню, кнопка возврата наверх
         p - кнопка "Показать еще" - подгрузка карточек из внешнего файла через AJAX 
         p - несколько разновидностей табов

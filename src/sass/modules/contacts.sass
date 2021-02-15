@@ -199,9 +199,14 @@
       transform: translateY(-50%)
       pointer-events: none
       width: 100%
-      
+    input
+      +border(1px,#E0E0E0) 
+      border-radius: 5px
     input::-webkit-input-placeholder
       color: transparent
+    input::placeholder
+      color: transparent
+      
     @media (max-width: 1199px)
       // flex: 0 1 100%
       // margin: 0 0 0 0
@@ -211,16 +216,16 @@
       // margin: 0 0 0 0
       // padding: 0 0 0 0
 //-------------
-.contacts-form__item input:focus + label,
-.contacts-form__item textarea:focus + label,
-.contacts-form__item input:not(:placeholder-shown) + label,
-.contacts-form__item textarea:not(:placeholder-shown) + label,
-.contacts-form__item input:-webkit-autofill + label,
-.contacts-form__item textarea:-webkit-autofill + label
-    transform: translateY(-34px)
-    font-size: 12px
-    left: 0
-    color: lighten($active, 20%)
+// .contacts-form__item input:focus + label,
+// .contacts-form__item textarea:focus + label
+// // .contacts-form__item input:not(:placeholder-shown) + label,
+// // .contacts-form__item textarea:not(:placeholder-shown) + label,
+// // .contacts-form__item input:-webkit-autofill + label,
+// // .contacts-form__item textarea:-webkit-autofill + label
+//   transform: translateY(-34px)
+//   font-size: 12px
+//   left: 0!important
+//   color: lighten($active, 20%)
 
 
 .badge-warning
@@ -238,148 +243,12 @@
   flex: 0 1 100%
   transition: all 0.3s ease-in-out
 
-//------#result--------
-#result
-  // +alic
-  // +jucs
-  // +jucb
-  // width:
-  // height:
-
-  // padding: 0 0 0 0
-  // position: relative
-  // display: none
-  // display: flex
-  // display: grid
-  // grid-template-columns:
-  // grid-template-rows:
-  // grid-template-areas:
-  // grid-area:
-  @media (max-width: 1199px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-  @media (max-width: 767px)
-    // flex: 0 1 100%
-    // margin: 0 0 0 0
-    // padding: 0 0 0 0
-//-------------
-
-
-//-------------
-// .contacts
-//   // display: flex
-//   // width: 80%
-//   // margin: 0 0 3% 0
-//   // +media-breakpoint-down(sm)
-//   //   font-size: 24px!important
-//   //   margin: 0 0 5% 0
-//   .connect__form
-//     background-color: white
-//     box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.83)
-//     padding: 4% 3%
-//     border-radius: 40px
-//     h3
-//       padding: 0 0 6% 0	
-
-  
-//   .contacts__body
-//     padding: 20% 0 15% 0
-//     border-radius: 10px
-//   .form__submit-button
-//     +jucc
-  
-  
-//   .connect__form-item
-//     position: relative
-//     margin-bottom: 52px
-//     +bg($active) 
-//     border-bottom: 2px solid #032E4A
-//     &:last-child
-//       border: none
-//       +bg(white)
-//   .connect__form-item label
-//     position: absolute
-//     top: 0
-//     left: 0
-//     transition: 0.3s
-//     transform: translateY(0)
-//     pointer-events: none
-//     color: #0d0d0d
-//     width: 100%
-//     font-family: "Montserrat", sans-serif
-//     font-size: 19px
-//     line-height: 25px
-//     font-weight: 600
-//     @media (max-width: 767px)
-//       font-size: calc(14px + (19-14)*((100vw-320px)/(576-320)))
-
-//   .connect__form-item input, .connect__form-item textarea
-//     width: 100%
-//     outline: none
-//     border: 1px solid transparent
-//     background-color: transparent
-//     background-repeat: no-repeat
-//     background-position: 100% 5px
-//     border-bottom: 1px solid #d8d8d8
-//     padding-bottom: 17px
-//     resize: none
-//     font-family: "Montserrat", sans-serif
-//     font-size: 19px
-//     line-height: 25px
-//     font-weight: 500
-
-//   .connect__form-item input:focus + label,
-//   .connect__form-item textarea:focus + label,
-//   .connect__form-item input:not(:placeholder-shown) + label,
-//   .connect__form-item textarea:not(:placeholder-shown) + label,
-//   .connect__form-item input:-webkit-autofill + label,
-//   .connect__form-item textarea:-webkit-autofill + label
-//     transform: translateY(-34px)
-//     font-size: 14px
-
-//   /* ------------------------
-//   .connect__form-item input:focus + label
-//     transform: translateY(-34px)
-//     font-size: 14px
-//   .connect__form-item textarea:focus + label
-//     transform: translateY(-34px)
-//     font-size: 14px
-//   .connect__form-item input:not(:placeholder-shown) + label
-//     transform: translateY(-34px)
-//     font-size: 14px
-//   .connect__form-item textarea:not(:placeholder-shown) + label
-//     transform: translateY(-34px)
-//     font-size: 14px
-//   .connect__form-item input:-webkit-autofill + label
-//     transform: translateY(-34px)
-//     font-size: 14px
-//   .connect__form-item textarea:-webkit-autofill + label
-//     transform: translateY(-34px)
-//     font-size: 14px
-//   /* --------------------------------------
-
-//   .connect__form-item input::-webkit-input-placeholder, .connect__form-item textarea::-webkit-input-placeholder
-//     color: transparent
-
-//   .connect__form-item input::-moz-placeholder, .connect__form-item  textarea::-moz-placeholder
-//     color: transparent
-
-//   .connect__form-item input:-ms-input-placeholder, .connect__form-item textarea:-ms-input-placeholder
-//     color: transparent
-
-//   .connect__form-item input:-moz-placeholder, .connect__form-item   textarea:-moz-placeholder
-//     color: transparent
-
-//   .connect__form-item input:not(:placeholder-shown):invalid, .connect__form-item textarea:not(:placeholder-shown):invalid
-//     color: #fa333c
-//     border-bottom: 1px solid #fa333c
-//     font-family: "Montserrat", sans-serif
-//     font-size: 15px
-//     font-weight: 600
 
 
 
-
-
-
+.contacts-form__item input:focus + label,
+.contacts-form__item textarea:focus + label
+  transform: translateY(-34px)
+  font-size: 12px
+  left: 0
+  color: lighten($active, 20%)
