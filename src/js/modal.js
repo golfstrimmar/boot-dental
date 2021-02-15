@@ -60,3 +60,38 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  let Popup = $(".popup-player");
+  Popup.fadeOut(200);
+  const player1 = new Plyr(".player-1");
+
+  $(".popup-player-init-js").on("click", function () {
+    let rel = $(this).attr("rel");
+    let pop = $("div." + rel);
+    pop.fadeIn(200);
+    $("body").css("overflow", "hidden");
+  });
+
+  $(".close-js").on("click", function () {
+    Popup.fadeOut(200);
+    $("body").css("overflow", "visible");
+    player1.stop();
+  });
+
+  $(document).on("mouseup", function (e) {
+    if ($(".popup-player__overlay").is(e.target)) {
+      Popup.fadeOut(200);
+      $("body").removeClass("lock");
+      $("body").css("overflow", "visible");
+      player1.stop();
+    }
+  });
+});

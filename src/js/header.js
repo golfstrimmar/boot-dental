@@ -48,83 +48,11 @@ $("body").removeClass("lock");
      }
    });
 
-  // ============кнопка на начало если вдруг не понравится
-  // $(document).ready(function (e) {
-  //     $(".scrollup").click(function () {
-  //       $("html, body").animate(
-  //         {
-  //           scrollTop: 0,
-  //         },
-  //         1000
-  //       );
-  //     });
-  //   }),
-  //     $(document).ready(function (e) {
-  //       $(window).scroll(function () {
-  //         if ($(this).scrollTop() > 200) {
-  //           $(".scrollup").fadeIn();
-  //         } else {
-  //           $(".scrollup").fadeOut();
-  //         }
-  //       });
-  //     }),
-
-//   function () {
-//     "use strict";
-
-//     var upDownBtn = document.querySelector(".up_down_btn");
-//     var check;
-
-//     function trackScroll() {
-//       var scrolled = window.pageYOffset;
-//       var coords = 200;
-
-//       if (scrolled > coords) {
-//         upDownBtn.classList.add("up_down_btn-show");
-//         upDownBtn.innerHTML = "&uarr;";
-//         upDownBtn.setAttribute("title", "Наверх");
-//         check = false;
-//       }
-//       if (scrolled < coords) {
-//         upDownBtn.innerHTML = "&darr;";
-//         upDownBtn.setAttribute("title", "Вниз");
-//         check = true;
-//       }
-//     }
-
-// $(document).ready(function (e) {
-//   function backToTop() {
-//     upDownBtn.classList.add("up_down_btn-disabled");
-//     if (!check) {
-//       (function goTop() {
-//         if (window.pageYOffset !== 0) {
-//           window.scrollBy(0, -15);
-//           setTimeout(goTop, 0);
-//         } else {
-//           upDownBtn.classList.remove("up_down_btn-disabled");
-//         }
-//       })();
-//       return;
-//     } else if (check) {
-//       (function goBottom() {
-//         var match = Math.ceil(
-//           window.pageYOffset + document.documentElement.clientHeight
-//         );
-
-//         if (match != document.documentElement.scrollHeight) {
-//           window.scrollBy(0, 15);
-//           setTimeout(goBottom, 0);
-//         } else {
-//           upDownBtn.classList.remove("up_down_btn-disabled");
-//         }
-//       })();
-//       return;
-//     }
-//   }
-
-//   window.addEventListener("scroll", trackScroll);
-//   upDownBtn.addEventListener("click", backToTop);
-// })();
-
-
- 
+  window.onresize = function () {
+    if (window.innerWidth >= 768) {
+      $(".menu").removeClass("menu-active").find(".header__info").remove();
+      $(".info").removeClass("info-active");
+      $("body").removeClass("lock");
+      // alert("");
+    }
+  };
